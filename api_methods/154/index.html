@@ -1,0 +1,180 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Update Oauth 1.0 Access Token :: /oauth1/accesstokens/{accesstoken}</h1> 
+</p>
+
+<!-- <a href="/api_methods/154/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Oauth 1.0a Access Tokens
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+POST
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Updates the attributes of given accesstoken
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{org}/oauth1/accesstokens/{accesstoken}
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;south&quot;
+  }, {
+    &quot;name&quot; : &quot;country&quot;,
+    &quot;value&quot; : &quot;norway&quot;
+  } ],
+  &quot;scope&quot; : &quot;global&quot;
+}
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+
+<tr>
+<div class="request_element" id="request_element_48">
+<td>attributes</td>
+<td>Arbitrary name/value elements that are used in profiles</td>
+<td></td>
+<td>No</td>
+<td><a href="../../request_elements/48/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_49">
+<td>scope</td>
+<td>Grouping of Provider APIs to which the accesstoken is associated, that defines the permissions allowed for modifying the resource.</td>
+<td></td>
+<td>Yes</td>
+<td><a href="../../request_elements/49/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;apiProducts&quot; : [ &quot;NikeApiProduct&quot; ],
+  &quot;app&quot; : &quot;nikeApp&quot;,
+  &quot;appUserId&quot; : &quot;nikeDeveloper@apigee.com&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;south&quot;
+  }, {
+    &quot;name&quot; : &quot;country&quot;,
+    &quot;value&quot; : &quot;norway&quot;
+  } ],
+  &quot;consumerKey&quot; : &quot;mlfBg7NH9tCua8wUhuamKHeTdfHxMB0A&quot;,
+  &quot;consumerSecret&quot; : &quot;iF1lDg239ngfhLWH&quot;,
+  &quot;createdAt&quot; : 1343037194128,
+  &quot;createdBy&quot; : &quot;1343037194128&quot;,
+  &quot;expiresAt&quot; : 1343038994128,
+  &quot;issuedAt&quot; : 1343037194128,
+  &quot;lastModifiedAt&quot; : 1343037194207,
+  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
+  &quot;scope&quot; : &quot;global&quot;,
+  &quot;secret&quot; : &quot;HJ3Gl6KTF01pAH24GAAdGfb8dOq1&quot;,
+  &quot;status&quot; : &quot;approved&quot;,
+  &quot;token&quot; : &quot;kNw6eQrL5G7etEBcvqvRTL01E5rY&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  Failure 404 with proper error message
+{
+  &quot;code&quot; : &quot;keymanagement.service.....&quot;,
+  &quot;message&quot; : &quot;Access Token doesnot exist&quot;,
+  &quot;contexts&quot; : [ ]
+}
+
+Error Codes:
+1.keymanagement.service.oauth10_access_token_doesnotexist
+3. keymanagement.service.application_not_approved
+4. keymanagement.service.oauth10_access_token_notapproved
+5. keymanagement.service.oauth10_access_token_update_failed
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+- application/json
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

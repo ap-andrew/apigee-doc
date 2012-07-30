@@ -1,0 +1,113 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>List Developers :: /developers</h1> 
+</p>
+
+<!-- <a href="/api_methods/9/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Developers
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+GET
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  Returns an array of email addresses, each of which is the unique key for a developer in the Organization the call is made against. This call does not list any Company Developers who may be part of an Organization.
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Lists all developers by email address (the unique key for developers in Apigee)
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v2/organizations/{organizationName}/developers
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  [ &quot;developer@apigee.com&quot;, &quot;dev1@apigee.com&quot;, &quot;dev2@apigee.com&quot; ]
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+- application/json
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

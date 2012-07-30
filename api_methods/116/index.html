@@ -1,0 +1,122 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Revoke an Access Token :: /oauth2/accesstokens/{accesstoken}?action=revoke</h1> 
+</p>
+
+<!-- <a href="/api_methods/116/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Oauth 2.0 Access Tokens
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+POST
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Deletes a specific Access Toekn
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{org}/oauth2/accesstokens/{accesstoken}?action=revoke
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  Success 204 
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+   404 
+&lt;Error&gt;
+&lt;Code&gt;keymanagement.service.invalid_access_token&lt;/Code&gt;
+&lt;Message&gt;Invalid Access Token&lt;/Message&gt;
+&lt;Contexts/&gt;
+&lt;/Error&gt;
+
+Error Codes:
+1. keymanagement.service.application_not_approved
+2. keymanagement.service.invalid_access_token
+3. keymanagement.service.access_token_revoke_failed
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

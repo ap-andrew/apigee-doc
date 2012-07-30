@@ -1,0 +1,204 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Update Key with ApiProduct(s) :: /developers/{developerName}/apps/{appName}/keys/{consumerKey}</h1> 
+</p>
+
+<!-- <a href="/api_methods/89/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Developer App Keys
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+POST
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  Updates an existing Developer App Key with the specified APi Product, enabling the Developer App that holds the Key to access the URIs bundled in the API Product.
+The ApiProduct(s) specified in request payload will be merged with existing ApiProduct(s) for this key.
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Adds an API Product to a Developer App Key
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u {myname:mypass} &quot;https://api.enterprise.apigee.com/v1/o/{myorg}//developers/{developerName}/apps/{appName}/keys/{consumerKey}&quot; 
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+   {
+  &quot;apiProducts&quot;: [&quot;ApiProduct_qa&quot;],
+  &quot;attributes&quot; : [{
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;south&quot;
+  },{
+    &quot;name&quot; : &quot;country&quot;,
+    &quot;value&quot; : &quot;norway&quot;
+  }]
+}
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+
+<tr>
+<div class="request_element" id="request_element_40">
+<td>apiProducts</td>
+<td>The name of the API Product to added to the Developer App Key</td>
+<td></td>
+<td>Yes</td>
+<td><a href="../../request_elements/40/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_41">
+<td>attributes</td>
+<td>Arbitrary name/value attributes added to the profile for the Developer App Key , usually used for app specific processing or metadata/analytics</td>
+<td></td>
+<td>No</td>
+<td><a href="../../request_elements/41/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;apiProducts&quot; : [ {
+    &quot;apiproduct&quot; : &quot;ApiProduct&quot;,
+    &quot;status&quot; : &quot;approved&quot;
+  }, {
+    &quot;apiproduct&quot; : &quot;ApiProduct_qa&quot;,
+    &quot;status&quot; : &quot;approved&quot;
+  } ],
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;south&quot;
+  }, {
+    &quot;name&quot; : &quot;country&quot;,
+    &quot;value&quot; : &quot;norway&quot;
+  } ],
+  &quot;consumerKey&quot; : &quot;0F2S7iCWcQ4mDQVGXwS5tgPAGWnNxo0q&quot;,
+  &quot;consumerSecret&quot; : &quot;CciaOUKFPXVgBIGk&quot;,
+  &quot;status&quot; : &quot;approved&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_213">
+<td>apiproduct: </td>
+<td>The name of the API Product added to the Developer App Key</td>
+<td><a href="../../response_elements/213/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/89?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_214">
+<td>status: </td>
+<td>The status of the API Product</td>
+<td><a href="../../response_elements/214/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/89?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_215">
+<td>attributes: </td>
+<td>Arbitrary name/value pairs added by the client</td>
+<td><a href="../../response_elements/215/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/89?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_216">
+<td>consumerKey: </td>
+<td>The value of the Developer App Key to which the API Product was attached</td>
+<td><a href="../../response_elements/216/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/89?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_217">
+<td>consumerSecret: </td>
+<td>The value of the Developer App Key secret to which the API Product was attached</td>
+<td><a href="../../response_elements/217/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/89?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_218">
+<td>status: </td>
+<td>The status of the Consumer App Key (approved or pending). For API products whose approval type is set to &quot;Manual&quot;, keys are returned in pending state and must be explicitly approved.</td>
+<td><a href="../../response_elements/218/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/89?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;code&quot; : &quot;keymanagement.service.InvalidClientIdForGivenApp&quot;,
+  &quot;message&quot; : &quot;Invalid consumer key for Given App&quot;,
+  &quot;contexts&quot; : [ ]
+}
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

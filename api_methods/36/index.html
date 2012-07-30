@@ -1,0 +1,200 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Getting Developer for an App :: /developers?app={appName}</h1> 
+</p>
+
+<!-- <a href="/api_methods/36/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Developers
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+GET
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Get the Developer associated with an App
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass &quot;https://api.enterprise.apigee.com/v1/o/{myorg}/developers?app=TestApp&quot;
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;apps&quot; : [ &quot;MyTestApp&quot; ],
+  &quot;email&quot; : &quot;developer2@apigee.com&quot;,
+  &quot;firstName&quot; : &quot;Woodre&quot;,
+  &quot;last_name&quot; : &quot;Wilson&quot;,
+  &quot;userName&quot; : &quot;wilson&quot;,
+  &quot;organizationName&quot; : &quot;gsorg&quot;,
+  &quot;status&quot; : &quot;active&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;north&quot;
+  } ],
+  &quot;createdAt&quot; : 1342258630656,
+  &quot;createdBy&quot; : &quot;defaultUser&quot;,
+  &quot;lastModifiedAt&quot; : 1342258630656,
+  &quot;lastModifiedBy&quot; : &quot;defaultUser&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_180">
+<td>apps: </td>
+<td>The name of the App that the search was performed on</td>
+<td><a href="../../response_elements/180/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/36?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_181">
+<td>email: </td>
+<td>Email address of the developer of this App</td>
+<td><a href="../../response_elements/181/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/36?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_182">
+<td>firstName: </td>
+<td>First name of the developer of this App</td>
+<td><a href="../../response_elements/182/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/36?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_183">
+<td>last_name: </td>
+<td>Last name of the developer of this App</td>
+<td><a href="../../response_elements/183/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/36?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_184">
+<td>organizationName: </td>
+<td>The Organization to which the Developer of this App belongs</td>
+<td><a href="../../response_elements/184/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/36?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_185">
+<td>userName: </td>
+<td>Username of the Developer of this App (not used by Apigee)</td>
+<td><a href="../../response_elements/185/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/36?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_186">
+<td>status: </td>
+<td>The status of the Developer of this App (Active, Inactive, login_lock)</td>
+<td><a href="../../response_elements/186/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/36?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_187">
+<td>attributes: </td>
+<td>Arbitrary name/value pairs that constitute a custom profile</td>
+<td><a href="../../response_elements/187/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/36?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_188">
+<td>createdAt: </td>
+<td>The Unix time value for the creation date of this entity</td>
+<td><a href="../../response_elements/188/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/36?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_189">
+<td>createdBy: </td>
+<td>The username for the Apigee account holder who created this Developer profile</td>
+<td><a href="../../response_elements/189/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/36?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_190">
+<td>lastModifiedAt: </td>
+<td>The Unix time value for the most recent modification date of this entity</td>
+<td><a href="../../response_elements/190/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/36?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_191">
+<td>lastModifiedBy: </td>
+<td>The username for the Apigee account holder who most recently modified this Developer profile</td>
+<td><a href="../../response_elements/191/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/36?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

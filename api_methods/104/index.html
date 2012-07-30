@@ -1,0 +1,127 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Get an API :: /apis/{apiName}</h1> 
+</p>
+
+<!-- <a href="/api_methods/104/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  APIs
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+GET
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  Gets the existing revisions for an API 
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Gets an API, providing a pointer to existing revisions of the API.
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/o/{myorg}/apis/{apiName}
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;name&quot; : &quot;myapi&quot;,
+  &quot;revision&quot; : [ &quot;1&quot; ]
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_230">
+<td>name: </td>
+<td>Name of the API</td>
+<td><a href="../../response_elements/230/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/104?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_231">
+<td>revision: </td>
+<td>Sequentially numbered packaged of code and configuration that implements the API proxy processing pipeline</td>
+<td><a href="../../response_elements/231/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/104?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

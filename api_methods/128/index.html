@@ -1,0 +1,141 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Remove App from App Family :: /developers/{developerEmail}/appfamilies/{appFamily}/app/{appName}</h1> 
+</p>
+
+<!-- <a href="/api_methods/128/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  App Family
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+DELETE
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Removes an App from an App Family
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{organizationname}/developers/{developeremail}/appfamilies/{appfamily}/apps/{appname}
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;accessType&quot; : &quot;read&quot;,
+  &quot;appFamily&quot; : &quot;default&quot;,
+  &quot;attributes&quot; : [ ],
+  &quot;callbackUrl&quot; : &quot;http://www.apigee.com&quot;,
+  &quot;companyName&quot; : &quot;&quot;,
+  &quot;createdAt&quot; : 1343048813779,
+  &quot;createdBy&quot; : &quot;defaultUser&quot;,
+  &quot;credentials&quot; : [ {
+    &quot;apiProducts&quot; : [ {
+      &quot;apiproduct&quot; : &quot;sandbox&quot;,
+      &quot;status&quot; : &quot;approved&quot;
+    } ],
+    &quot;attributes&quot; : [ ],
+    &quot;consumerKey&quot; : &quot;AFuFhPF6INgIaTWywIjZzypoza8ejstv&quot;,
+    &quot;consumerSecret&quot; : &quot;KPjXHfzE1FKno2AF&quot;,
+    &quot;status&quot; : &quot;approved&quot;
+  } ],
+  &quot;developerId&quot; : &quot;automationorganization@@@gssiKwomuPv0e18w&quot;,
+  &quot;lastModifiedAt&quot; : 1343048813779,
+  &quot;lastModifiedBy&quot; : &quot;defaultUser&quot;,
+  &quot;name&quot; : &quot;app1.1&quot;,
+  &quot;status&quot; : &quot;approved&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  Failure 4xx with proper error message
+{
+  &quot;code&quot; : &quot;developer.service.AppDoesNotExistInGivenAppFamily&quot;,
+  &quot;message&quot; : &quot;App app1.1 doesnt exist in given appfamily {1}&quot;,
+  &quot;contexts&quot; : [ ]
+}
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+- application/json
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

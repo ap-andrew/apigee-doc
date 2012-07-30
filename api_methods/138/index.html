@@ -1,0 +1,201 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Get Developer of an App :: /developers?app={appName}</h1> 
+</p>
+
+<!-- <a href="/api_methods/138/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Developers
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+GET
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  This call enables you to retrieve a Developer's profile based on the name of an App. The profile retrieved is for the Developer who registered the App in your Organization.
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Gets the Developer profile by App name
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v2/organizations/{organizationName}/developers?app={appName}
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;apps&quot; : [ &quot;MyTestApp&quot; ],
+  &quot;email&quot; : &quot;developer2@apigee.com&quot;,
+  &quot;firstName&quot; : &quot;Woodre&quot;,
+  &quot;last_name&quot; : &quot;Wilson&quot;,
+  &quot;userName&quot; : &quot;wilson&quot;,
+  &quot;organizationName&quot; : &quot;gsorg&quot;,
+  &quot;status&quot; : &quot;active&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;north&quot;
+  } ],
+  &quot;createdAt&quot; : 1342258630656,
+  &quot;createdBy&quot; : &quot;defaultUser&quot;,
+  &quot;lastModifiedAt&quot; : 1342258630656,
+  &quot;lastModifiedBy&quot; : &quot;defaultUser&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_192">
+<td>apps: </td>
+<td>The name of the App</td>
+<td><a href="../../response_elements/192/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/138?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_193">
+<td>email: </td>
+<td>The email address of the Developer who registered the App</td>
+<td><a href="../../response_elements/193/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/138?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_194">
+<td>firstName: </td>
+<td>The first name of the Developer who registered the App</td>
+<td><a href="../../response_elements/194/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/138?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_195">
+<td>last_name: </td>
+<td>The last name of the Developer who registered the App</td>
+<td><a href="../../response_elements/195/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/138?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_196">
+<td>userName: </td>
+<td>The username of the Developer who registered the App (unused by Apigee)</td>
+<td><a href="../../response_elements/196/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/138?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_197">
+<td>organizationName: </td>
+<td>The Organization which the Developer who registered the App belongs</td>
+<td><a href="../../response_elements/197/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/138?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_198">
+<td>status: </td>
+<td>The status of the Developer who registered the App (active, inactive, or login_lock</td>
+<td><a href="../../response_elements/198/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/138?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_199">
+<td>attributes: </td>
+<td>Arbitrary name/value attributes that are part of the Developer profile</td>
+<td><a href="../../response_elements/199/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/138?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_200">
+<td>createdAt: </td>
+<td>The Unix time at which the Developer profile was created</td>
+<td><a href="../../response_elements/200/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/138?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_201">
+<td>createdBy: </td>
+<td>The Apigee username of the user who created the Developer profile</td>
+<td><a href="../../response_elements/201/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/138?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_202">
+<td>lastModifiedAt: </td>
+<td>The Unix time at which the Developer profile was last modified</td>
+<td><a href="../../response_elements/202/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/138?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_203">
+<td>lastModifiedAt: </td>
+<td>The Apigee username of the user who most recently modified the Developer profile</td>
+<td><a href="../../response_elements/203/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/138?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+- application/json
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

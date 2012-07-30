@@ -1,0 +1,123 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Approve a Request Token :: /oauth/1/requesttokens/{requesttoken}?action=approve</h1> 
+</p>
+
+<!-- <a href="/api_methods/147/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Oauth 1.0a Request Tokens
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+POST
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{org}/oauth/1/requesttokens/{requesttoken}?action=approve
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  Success 200 with proper response
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  Failure 404 with proper error message
+{
+  &quot;code&quot; : &quot;keymanagement.service......&quot;,
+  &quot;message&quot; : &quot;Request Token doesnot exist&quot;,
+  &quot;contexts&quot; : [ ]
+}
+
+Error Code:
+1. keymanagement.service.oauth10_request_token_doesnot_exist
+3. keymanagement.service.application_not_approved
+4. keymanagement.service.oauth10_request_token_approve_failed
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+- application/octet-stream
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

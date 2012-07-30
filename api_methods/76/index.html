@@ -1,0 +1,131 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Get Statistics on all API traffic :: /environments/{environment_name}/stats/?select={metrics}&amp;timeRange={startDate~endDate}&amp;timeUnit={unit}</h1> 
+</p>
+
+<!-- <a href="/api_methods/76/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Analytics
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+GET
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  Use the GET method to retrieve the metrics for all the available APIs for a given customer in a specific organization and environment. All API traffic displays the total daily throughput over the last 3 months for all APIs in the account.
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Retrieve the metrics for all the available APIs for a given customer in a specific organization and environment.
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+https://api.enterprise.apigee.com/v1/organizations/myorg/environments/prod/stats/?select=message_count&amp;timeRange=1/20/2012 00:00~1/30/2012 00:00&amp;timeUnit=hour 
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+    &quot;environments&quot;: [
+       {
+           &quot;metrics&quot;: [
+               {
+                   &quot;name&quot;: &quot;message_count&quot;,
+                   &quot;values&quot;: [
+                          {
+                           &quot;timestamp&quot;: 1335241800000,
+                           &quot;value&quot;: &quot;9090.0&quot;
+                          }
+                   ]
+               }
+           ],
+           &quot;name&quot;: &quot;test&quot;
+       }
+    ],
+    &quot;metaData&quot;: {}
+}
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

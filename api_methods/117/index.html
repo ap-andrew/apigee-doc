@@ -1,0 +1,242 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Create a Company :: /companies</h1> 
+</p>
+
+<!-- <a href="/api_methods/117/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Companies
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+POST
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Creates a Company in an Organization
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/companies
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  {
+ &quot;name&quot; : &quot;DevCompany&quot;,
+ &quot;displayName&quot; : &quot;Developer Company&quot;,
+ &quot;status&quot; : &quot;active&quot;,
+ &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;north&quot;
+ } ]
+}
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+
+<tr>
+<div class="request_element" id="request_element_9">
+<td>name</td>
+<td></td>
+<td></td>
+<td>Yes</td>
+<td><a href="../../request_elements/9/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_10">
+<td>displayName</td>
+<td></td>
+<td></td>
+<td>Yes</td>
+<td><a href="../../request_elements/10/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_11">
+<td>status</td>
+<td></td>
+<td></td>
+<td>Yes</td>
+<td><a href="../../request_elements/11/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_12">
+<td>attributes</td>
+<td></td>
+<td></td>
+<td>No</td>
+<td><a href="../../request_elements/12/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;name&quot; : &quot;DevCompany&quot;,
+  &quot;displayName&quot; : &quot;Developer Company&quot;,
+  &quot;organization&quot; : &quot;myorg&quot;,
+  &quot;status&quot; : &quot;active&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;north&quot;
+  } ],
+  &quot;createdAt&quot; : 1343049811765,
+  &quot;createdBy&quot; : &quot;Admin&quot;,
+  &quot;lastModifiedAt&quot; : 1343049811765,
+  &quot;lastModifiedBy&quot; : &quot;Admin&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_84">
+<td>name: </td>
+<td></td>
+<td><a href="../../response_elements/84/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/117?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_85">
+<td>displayName: </td>
+<td></td>
+<td><a href="../../response_elements/85/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/117?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_86">
+<td>organization: </td>
+<td></td>
+<td><a href="../../response_elements/86/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/117?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_87">
+<td>status: </td>
+<td></td>
+<td><a href="../../response_elements/87/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/117?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_88">
+<td>attributes: </td>
+<td></td>
+<td><a href="../../response_elements/88/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/117?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_89">
+<td>createdAt: </td>
+<td></td>
+<td><a href="../../response_elements/89/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/117?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_90">
+<td>createdBy: </td>
+<td></td>
+<td><a href="../../response_elements/90/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/117?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_91">
+<td>lastModifiedAt: </td>
+<td></td>
+<td><a href="../../response_elements/91/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/117?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_92">
+<td>lastModifiedBy: </td>
+<td></td>
+<td><a href="../../response_elements/92/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/117?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  Failure 4xx with proper error message
+{
+  &quot;code&quot; : &quot;developer.service.InvalidCompanyName&quot;,
+  &quot;message&quot; : &quot;Invalid Company Name&quot;,
+  &quot;contexts&quot; : [ ]
+}
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+- application/json
+- text/xml
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

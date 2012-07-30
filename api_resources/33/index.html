@@ -1,0 +1,225 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            
+<div class="page-header">
+  <h1>Oauth 1.0a Access Tokens</h1>
+</div>
+
+<table>
+	<tbody>
+		<tr>
+  <td class="lead">/oauth/1/accesstokens/{accesstoken}</td>
+
+ <tr>
+	
+  <td>Oauth 1.0a Access Tokens</td></tr>
+  <td>Apigee Enterprise validates the API key, retrieves the service profile associated with the API key, and checks to see that the quota has not been exceeded. When you apply OAuth to the API, Enterprise checks the request for an access token. Apigee Enterprise uses access tokens to define a user's permissions for modifying and using a specific API. If an access token is present, and the API is within the scope of the access token, you are allowed to access the API.
+
+Prerequisites to use this API call are:
+
+The provider has created an organization.
+You have a valid user ID as a developer.
+You have created an App.
+You have a valid consumer key.
+An access token has been generated.
+</td></tr>
+
+</tr>
+</tbody>
+</table>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Get Oauth 1.0 Access Token
+	       <a href="../../api_methods/152/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/152/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/152" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/organizations/{org}/oauth1/accesstokens/{accesstoken}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Fetches the details of given access token</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Get count of Oauth 1.0 Access Tokens
+	       <a href="../../api_methods/153/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/153/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/153" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/oauth1/accesstokens</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td></td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Update Oauth 1.0 Access Token
+	       <a href="../../api_methods/154/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/154/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/154" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/oauth1/accesstokens/{accesstoken}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">POST</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Updates the attributes of given accesstoken</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Delete Oauth 1.0 Access Token
+	       <a href="../../api_methods/155/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/155/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/155" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/oauth1/accesstokens/{accesstoken}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Deletes the specified access token</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Approve Oauth 1.0  Access Token
+	       <a href="../../api_methods/156/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/156/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/156" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/oauth1/accesstokens/{accesstoken}?action=approve</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">POST</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Approves the specified Access Token</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Revoke Oauth 1.0 Access Token
+	       <a href="../../api_methods/157/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/157/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/157" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/oauth1/accesstokens/{accesstoken}?action=revoke</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">POST</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Revokes the issued accesstoken</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+</tbody>
+</table>
+
+
+Schema:
+
+<div id="well"><pre></pre></div>
+
+<div class="form-actions">
+  <a href="../index.html" class="btn"><span class="translation_missing" title="translation missing: en.helpers.links.back">Back</span></a>
+  <a href="edit/index.html" class="btn"><span class="translation_missing" title="translation missing: en.helpers.links.edit">Edit</span></a>
+
+</div>
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

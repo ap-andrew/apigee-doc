@@ -1,0 +1,191 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Get API Statistics :: /environments/{environmentName}/stats/apis</h1> 
+</p>
+
+<!-- <a href="/api_methods/71/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Analytics
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+GET
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  Returns the total volume, total daily throughput over the last 3 months for all APIs in an organization.
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Use the GET method to retrieve metrics for all the APIs for an organization and environment.
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/myorg/environments/test/stats/apis?select=message_count&amp;timeRange=7%2F1%2F2012%2000%3A00~8%2F1%2F2012%2000%3A00&amp;timeUnit=hour&amp;sortby=message_count&amp;sort=DESC
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+ &quot;environments&quot; : [ {
+    &quot;dimensions&quot; : [ {
+       &quot;metrics&quot; : [
+                {
+               &quot;name&quot; : &quot;message_count&quot;,
+               &quot;values&quot; : [ {
+                    &quot;timestamp&quot; : 1335241800000,
+                    &quot;value&quot; : &quot;1.0&quot;
+                } ]
+           } ,
+                {
+                &quot;name&quot; : &quot;error_count&quot;,
+                &quot;values&quot; : [ {
+                     &quot;timestamp&quot; : 1335241800000,
+                     &quot;value&quot; : &quot;0.0&quot;
+                  } ]
+         }
+             ],
+    
+              &quot;name&quot; : &quot;api1&quot;
+    },
+           {
+       &quot;metrics&quot; : [
+              {
+             &quot;name&quot; : &quot;message_count&quot;,
+             &quot;values&quot; : [ {
+                      &quot;timestamp&quot; : 1335241800000,
+                      &quot;value&quot; : &quot;1.0&quot;
+                 } ]
+          },
+               {
+               &quot;name&quot; : &quot;error_count&quot;,
+               &quot;values&quot; : [ {
+                       &quot;timestamp&quot; : 1335241800000,
+                       &quot;value&quot; : &quot;0.0&quot;
+               } ]
+         }
+            ],
+    
+            &quot;name&quot; : &quot;api2&quot;
+    }
+         ],
+       
+        &quot;name&quot; : &quot;test&quot;
+     }
+   ],
+  &quot;metaData&quot; : {
+   }
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_1">
+<td>environments: </td>
+<td></td>
+<td><a href="../../response_elements/1/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/71?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_2">
+<td>dimensions: </td>
+<td></td>
+<td><a href="../../response_elements/2/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/71?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_3">
+<td>metrics: </td>
+<td></td>
+<td><a href="../../response_elements/3/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/71?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_7">
+<td>timestamp: </td>
+<td></td>
+<td><a href="../../response_elements/7/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/71?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_10">
+<td>metaData: </td>
+<td></td>
+<td><a href="../../response_elements/10/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/71?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+---
+- ''
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

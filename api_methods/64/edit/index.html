@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee Enterprise API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="9fYR0e9xO+mdsyVNFR5QKsBHzXQgoMRB432o6aBmh2s=" name="csrf-token" />
+    <link href="../../../assets/application-a2cf2fc60e7f628224d6179e9acb6bde.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="../../../assets/application-3d91ebb39ac1bf40fce53b1fddef09ec.js" type="text/javascript"></script>
+	
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link href="../../../favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link href="../images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="../images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="../images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+
+  </head>
+
+
+  <body>
+
+
+    <!-- <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+		<a class="brand" href="#">Apigee Enterprise API</a>
+
+        <div class="container">
+            <ul class="nav">
+	          <li><a href="/quick_starts">Quick Starts</a></li>
+              <li><a href="/api_resources">API Resources</a></li>
+              <li><a href="/api_methods">API Methods</a></li>
+              <li><a href="/parameters">Parameters</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <h1>Editing api_method</h1>
+
+<form accept-charset="UTF-8" action="/api_methods/64" class="formtastic api_method" id="edit_api_method_64" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="9fYR0e9xO+mdsyVNFR5QKsBHzXQgoMRB432o6aBmh2s=" /></div>
+
+<fieldset class="actions"><ol>
+  <li class="action input_action " id="api_method_submit_action"><input name="commit" type="submit" value="Update Api method" /></li>
+</ol></fieldset> 
+<fieldset class="inputs"><ol>
+    <li class="select input optional" id="api_method_api_resource_input"><label class=" label" for="api_method_api_resource_id">Api resource</label><select id="api_method_api_resource_id" name="api_method[api_resource_id]"><option value="24">Analytics</option>
+<option value="3">API Products</option>
+<option value="1">APIs</option>
+<option value="29">App Family</option>
+<option value="30">Apps</option>
+<option value="6">Companies</option>
+<option value="22">Company App Families</option>
+<option value="21">Company App Keys</option>
+<option value="14" selected="selected">Company Apps</option>
+<option value="13">Company Developers</option>
+<option value="10">Debug Sessions</option>
+<option value="23">Deployments</option>
+<option value="12">Developer app access tokens</option>
+<option value="19">Developer app key access tokens</option>
+<option value="18">Developer App Keys</option>
+<option value="17">Developer Apps</option>
+<option value="4">Developers</option>
+<option value="15">Environments</option>
+<option value="7">Maps</option>
+<option value="33">Oauth 1.0a Access Tokens</option>
+<option value="31">Oauth 1.0a Request Tokens</option>
+<option value="32">Oauth 1.0a Verifiers</option>
+<option value="28">Oauth 2.0 Access Tokens</option>
+<option value="27">Oauth 2.0 Authorization Code</option>
+<option value="2">Organizations</option>
+<option value="9">Revision Deployments</option>
+<option value="8">Revisions</option>
+<option value="20">Users</option>
+<option value="16">Virtual Hosts</option></select>
+
+</li>   
+    <li class="string input required stringish" id="api_method_name_input"><label class=" label" for="api_method_name">Name<abbr title="required">*</abbr></label><input id="api_method_name" maxlength="255" name="api_method[name]" type="text" value="Create Company App" />
+
+</li>
+    <li class="string input optional stringish" id="api_method_path_input"><label class=" label" for="api_method_path">Path</label><input id="api_method_path" maxlength="255" name="api_method[path]" type="text" value="/companies/{companyName}/apps" />
+
+</li>
+    <li class="select input optional" id="api_method_verb_input"><label class=" label" for="api_method_verb">Verb</label><select id="api_method_verb" name="api_method[verb]"><option value="GET">GET</option>
+<option value="PUT">PUT</option>
+<option value="POST" selected="selected">POST</option>
+<option value="DELETE">DELETE</option></select>
+
+</li>
+    <li class="string input optional stringish" id="api_method_description_input"><label class=" label" for="api_method_description">Description</label><input id="api_method_description" maxlength="255" name="api_method[description]" type="text" value="Create App for a Company" />
+
+</li>
+	<li class="string input optional stringish" id="api_method_curl_json_input"><label class=" label" for="api_method_curl_json">Curl json</label><input id="api_method_curl_json" maxlength="255" name="api_method[curl_json]" type="text" value="curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{organizationname}/companies/{companyname}/apps" />
+
+</li>
+
+
+	<li class="check_boxes input optional" id="api_method_content_type_input"><fieldset class="choices"><legend class="label"><label>Content type</label></legend><input id="api_method_content_type_none" name="api_method[content_type][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="api_method_content_type_applicationjson"><input id="api_method_content_type_applicationjson" name="api_method[content_type][]" type="checkbox" value="application/json" />application/json</label></li>
+<li class="choice"><label for="api_method_content_type_textxml"><input id="api_method_content_type_textxml" name="api_method[content_type][]" type="checkbox" value="text/xml" />text/xml</label></li>
+<li class="choice"><label for="api_method_content_type_multipartform-data"><input id="api_method_content_type_multipartform-data" name="api_method[content_type][]" type="checkbox" value="multipart/form-data" />multipart/form-data</label></li>
+<li class="choice"><label for="api_method_content_type_applicationoctet-stream"><input id="api_method_content_type_applicationoctet-stream" name="api_method[content_type][]" type="checkbox" value="application/octet-stream" />application/octet-stream</label></li></ol></fieldset>
+
+</li>
+
+	
+	<li class="text input optional" id="api_method_sample_response_json_input"><label class=" label" for="api_method_sample_response_json">Sample response json</label><textarea id="api_method_sample_response_json" name="api_method[sample_response_json]" rows="20">{
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;Language&quot;,
+    &quot;value&quot; : &quot;java&quot;
+  } ],
+  &quot;createdAt&quot; : 1343389000141,
+  &quot;createdBy&quot; : &quot;andrew@apigee.com&quot;,
+  &quot;credentials&quot; : [ {
+    &quot;apiProducts&quot; : [ {
+      &quot;apiproduct&quot; : &quot;sandbox&quot;,
+      &quot;status&quot; : &quot;approved&quot;
+    } ],
+    &quot;attributes&quot; : [ ],
+    &quot;consumerKey&quot; : &quot;KaAQpovGCRvu5btnAIQB6qilop7Vsgwe&quot;,
+    &quot;consumerSecret&quot; : &quot;6GDmEgl5yxacEgtd&quot;,
+    &quot;status&quot; : &quot;approved&quot;
+  } ],
+  &quot;lastModifiedAt&quot; : 1343389000141,
+  &quot;lastModifiedBy&quot; : &quot;andrew@apigee.com&quot;,
+  &quot;name&quot; : &quot;sandboxApp&quot;,
+  &quot;status&quot; : &quot;approved&quot;
+}</textarea>
+
+</li>
+	
+	<div class="fields">
+	  <input id="api_method_response_elements_attributes_0_name" name="api_method[response_elements_attributes][0][name]" size="30" type="text" value="access_type" />
+      <input id="api_method_response_elements_attributes_0_description" name="api_method[response_elements_attributes][0][description]" size="30" type="text" value="" />
+	  <input id="api_method_response_elements_attributes_0__destroy" name="api_method[response_elements_attributes][0][_destroy]" type="hidden" value="false" /><a href="javascript:void(0)" class="i icon-remove remove_nested_fields"></a>
+<input id="api_method_response_elements_attributes_0_id" name="api_method[response_elements_attributes][0][id]" type="hidden" value="147" /></div><div class="fields">
+	  <input id="api_method_response_elements_attributes_1_name" name="api_method[response_elements_attributes][1][name]" size="30" type="text" value="attributes" />
+      <input id="api_method_response_elements_attributes_1_description" name="api_method[response_elements_attributes][1][description]" size="30" type="text" value="" />
+	  <input id="api_method_response_elements_attributes_1__destroy" name="api_method[response_elements_attributes][1][_destroy]" type="hidden" value="false" /><a href="javascript:void(0)" class="i icon-remove remove_nested_fields"></a>
+<input id="api_method_response_elements_attributes_1_id" name="api_method[response_elements_attributes][1][id]" type="hidden" value="148" /></div><div class="fields">
+	  <input id="api_method_response_elements_attributes_2_name" name="api_method[response_elements_attributes][2][name]" size="30" type="text" value="callback_url" />
+      <input id="api_method_response_elements_attributes_2_description" name="api_method[response_elements_attributes][2][description]" size="30" type="text" value="" />
+	  <input id="api_method_response_elements_attributes_2__destroy" name="api_method[response_elements_attributes][2][_destroy]" type="hidden" value="false" /><a href="javascript:void(0)" class="i icon-remove remove_nested_fields"></a>
+<input id="api_method_response_elements_attributes_2_id" name="api_method[response_elements_attributes][2][id]" type="hidden" value="149" /></div><div class="fields">
+	  <input id="api_method_response_elements_attributes_3_name" name="api_method[response_elements_attributes][3][name]" size="30" type="text" value="created_at" />
+      <input id="api_method_response_elements_attributes_3_description" name="api_method[response_elements_attributes][3][description]" size="30" type="text" value="" />
+	  <input id="api_method_response_elements_attributes_3__destroy" name="api_method[response_elements_attributes][3][_destroy]" type="hidden" value="false" /><a href="javascript:void(0)" class="i icon-remove remove_nested_fields"></a>
+<input id="api_method_response_elements_attributes_3_id" name="api_method[response_elements_attributes][3][id]" type="hidden" value="150" /></div><div class="fields">
+	  <input id="api_method_response_elements_attributes_4_name" name="api_method[response_elements_attributes][4][name]" size="30" type="text" value="created_by" />
+      <input id="api_method_response_elements_attributes_4_description" name="api_method[response_elements_attributes][4][description]" size="30" type="text" value="" />
+	  <input id="api_method_response_elements_attributes_4__destroy" name="api_method[response_elements_attributes][4][_destroy]" type="hidden" value="false" /><a href="javascript:void(0)" class="i icon-remove remove_nested_fields"></a>
+<input id="api_method_response_elements_attributes_4_id" name="api_method[response_elements_attributes][4][id]" type="hidden" value="151" /></div><div class="fields">
+	  <input id="api_method_response_elements_attributes_5_name" name="api_method[response_elements_attributes][5][name]" size="30" type="text" value="lastmodified_by" />
+      <input id="api_method_response_elements_attributes_5_description" name="api_method[response_elements_attributes][5][description]" size="30" type="text" value="" />
+	  <input id="api_method_response_elements_attributes_5__destroy" name="api_method[response_elements_attributes][5][_destroy]" type="hidden" value="false" /><a href="javascript:void(0)" class="i icon-remove remove_nested_fields"></a>
+<input id="api_method_response_elements_attributes_5_id" name="api_method[response_elements_attributes][5][id]" type="hidden" value="152" /></div><div class="fields">
+	  <input id="api_method_response_elements_attributes_6_name" name="api_method[response_elements_attributes][6][name]" size="30" type="text" value="name" />
+      <input id="api_method_response_elements_attributes_6_description" name="api_method[response_elements_attributes][6][description]" size="30" type="text" value="" />
+	  <input id="api_method_response_elements_attributes_6__destroy" name="api_method[response_elements_attributes][6][_destroy]" type="hidden" value="false" /><a href="javascript:void(0)" class="i icon-remove remove_nested_fields"></a>
+<input id="api_method_response_elements_attributes_6_id" name="api_method[response_elements_attributes][6][id]" type="hidden" value="153" /></div><div class="fields">
+	  <input id="api_method_response_elements_attributes_7_name" name="api_method[response_elements_attributes][7][name]" size="30" type="text" value="status" />
+      <input id="api_method_response_elements_attributes_7_description" name="api_method[response_elements_attributes][7][description]" size="30" type="text" value="" />
+	  <input id="api_method_response_elements_attributes_7__destroy" name="api_method[response_elements_attributes][7][_destroy]" type="hidden" value="false" /><a href="javascript:void(0)" class="i icon-remove remove_nested_fields"></a>
+<input id="api_method_response_elements_attributes_7_id" name="api_method[response_elements_attributes][7][id]" type="hidden" value="154" /></div>	<p><a href="javascript:void(0)" class="i icon-plus add_nested_fields" data-association="response_elements">Elements</a></p>
+	
+	<li class="text input optional" id="api_method_error_message_input"><label class=" label" for="api_method_error_message">Error message</label><textarea id="api_method_error_message" name="api_method[error_message]" rows="20">  &quot;code&quot; : &quot;keymanagement.service.app_invalid_name&quot;,
+  &quot;message&quot; : &quot;Invalid App Name&quot;,
+  &quot;contexts&quot; : [ ]
+}
+
+{
+  &quot;code&quot; : &quot;keymanagement.service.apiproducts_invalid&quot;,
+  &quot;message&quot; : &quot;One or more ApiProduct is invalid&quot;,
+  &quot;contexts&quot; : [ ]
+}</textarea>
+
+</li>
+
+    <li class="select input optional" id="api_method_auth_input"><label class=" label" for="api_method_auth">Auth</label><select id="api_method_auth" name="api_method[auth]"><option value="Basic Auth" selected="selected">Basic Auth</option>
+<option value="Oauth 2.0">Oauth 2.0</option></select>
+
+</li>
+    <li class="text input optional" id="api_method_doc_input"><label class=" label" for="api_method_doc">Doc</label><textarea id="api_method_doc" name="api_method[doc]" rows="20"></textarea>
+
+</li>
+	<li class="string input optional stringish" id="api_method_console_tag_input"><label class=" label" for="api_method_console_tag">Console tag</label><input id="api_method_console_tag" maxlength="255" name="api_method[console_tag]" type="text" value="" />
+
+</li>
+	    <li class="select input optional" id="api_method_parameters_input"><input name="api_method[parameter_ids][]" type="hidden" value="" /><label class=" label" for="api_method_parameter_ids">Parameters</label><select id="api_method_parameter_ids" multiple="multiple" name="api_method[parameter_ids][]"><option value="20">access</option>
+<option value="14">apiproducts</option>
+<option value="5">apis</option>
+<option value="31">apps</option>
+<option value="27">Attributes</option>
+<option value="36">basepath</option>
+<option value="1">baseUrl</option>
+<option value="37">companies</option>
+<option value="33">consumerKey</option>
+<option value="34">consumerSecret</option>
+<option value="30">count</option>
+<option value="35">developers</option>
+<option value="22">Email</option>
+<option value="23">FirstName</option>
+<option value="46">keys</option>
+<option value="12">LastModifiedAt</option>
+<option value="13">LastModifiedBy</option>
+<option value="24">LastName</option>
+<option value="38">metrics</option>
+<option value="45">oauth2</option>
+<option value="28">organization</option>
+<option value="26">Password</option>
+<option value="8">Resources</option>
+<option value="17">Scope</option>
+<option value="42">sort</option>
+<option value="41">sortby</option>
+<option value="29">Status</option>
+<option value="40">timeRange</option>
+<option value="39">time_unit</option>
+<option value="43">user</option>
+<option value="25">UserName</option>
+<option value="44">version</option></select>
+
+</li>
+
+	<li class="text input optional" id="api_method_sample_request_json_input"><label class=" label" for="api_method_sample_request_json">Sample request json</label><textarea id="api_method_sample_request_json" name="api_method[sample_request_json]" rows="20">{
+  &quot;access_type&quot; : &quot;read&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;Language&quot;,
+    &quot;value&quot; : &quot;java&quot;
+  } ],
+  &quot;apiProducts&quot;: [ &quot;sandbox&quot;],
+  &quot;callback_url&quot; : &quot;www.apigee.com&quot;,
+  &quot;name&quot; : &quot;sandboxTestApp&quot;
+}</textarea>
+
+</li>	
+
+	
+	<div class="fields">
+	  <input id="api_method_request_elements_attributes_0_name" name="api_method[request_elements_attributes][0][name]" size="30" type="text" value="access_type" />
+      <input id="api_method_request_elements_attributes_0_description" name="api_method[request_elements_attributes][0][description]" size="30" type="text" value="" />
+	  <input id="api_method_request_elements_attributes_0_default_value" name="api_method[request_elements_attributes][0][default_value]" size="30" type="text" value="" />
+      <select id="api_method_request_elements_attributes_0_required" name="api_method[request_elements_attributes][0][required]"><option value="Yes">Yes</option>
+<option value="No" selected="selected">No</option></select>
+	  <input id="api_method_request_elements_attributes_0__destroy" name="api_method[request_elements_attributes][0][_destroy]" type="hidden" value="false" /><a href="javascript:void(0)" class="i icon-remove remove_nested_fields"></a>
+<input id="api_method_request_elements_attributes_0_id" name="api_method[request_elements_attributes][0][id]" type="hidden" value="25" /></div><div class="fields">
+	  <input id="api_method_request_elements_attributes_1_name" name="api_method[request_elements_attributes][1][name]" size="30" type="text" value="attributes" />
+      <input id="api_method_request_elements_attributes_1_description" name="api_method[request_elements_attributes][1][description]" size="30" type="text" value="" />
+	  <input id="api_method_request_elements_attributes_1_default_value" name="api_method[request_elements_attributes][1][default_value]" size="30" type="text" value="" />
+      <select id="api_method_request_elements_attributes_1_required" name="api_method[request_elements_attributes][1][required]"><option value="Yes">Yes</option>
+<option value="No" selected="selected">No</option></select>
+	  <input id="api_method_request_elements_attributes_1__destroy" name="api_method[request_elements_attributes][1][_destroy]" type="hidden" value="false" /><a href="javascript:void(0)" class="i icon-remove remove_nested_fields"></a>
+<input id="api_method_request_elements_attributes_1_id" name="api_method[request_elements_attributes][1][id]" type="hidden" value="26" /></div><div class="fields">
+	  <input id="api_method_request_elements_attributes_2_name" name="api_method[request_elements_attributes][2][name]" size="30" type="text" value="apiProducts" />
+      <input id="api_method_request_elements_attributes_2_description" name="api_method[request_elements_attributes][2][description]" size="30" type="text" value="" />
+	  <input id="api_method_request_elements_attributes_2_default_value" name="api_method[request_elements_attributes][2][default_value]" size="30" type="text" value="" />
+      <select id="api_method_request_elements_attributes_2_required" name="api_method[request_elements_attributes][2][required]"><option value="Yes">Yes</option>
+<option value="No" selected="selected">No</option></select>
+	  <input id="api_method_request_elements_attributes_2__destroy" name="api_method[request_elements_attributes][2][_destroy]" type="hidden" value="false" /><a href="javascript:void(0)" class="i icon-remove remove_nested_fields"></a>
+<input id="api_method_request_elements_attributes_2_id" name="api_method[request_elements_attributes][2][id]" type="hidden" value="27" /></div><div class="fields">
+	  <input id="api_method_request_elements_attributes_3_name" name="api_method[request_elements_attributes][3][name]" size="30" type="text" value="callback_url" />
+      <input id="api_method_request_elements_attributes_3_description" name="api_method[request_elements_attributes][3][description]" size="30" type="text" value="" />
+	  <input id="api_method_request_elements_attributes_3_default_value" name="api_method[request_elements_attributes][3][default_value]" size="30" type="text" value="" />
+      <select id="api_method_request_elements_attributes_3_required" name="api_method[request_elements_attributes][3][required]"><option value="Yes">Yes</option>
+<option value="No" selected="selected">No</option></select>
+	  <input id="api_method_request_elements_attributes_3__destroy" name="api_method[request_elements_attributes][3][_destroy]" type="hidden" value="false" /><a href="javascript:void(0)" class="i icon-remove remove_nested_fields"></a>
+<input id="api_method_request_elements_attributes_3_id" name="api_method[request_elements_attributes][3][id]" type="hidden" value="28" /></div><div class="fields">
+	  <input id="api_method_request_elements_attributes_4_name" name="api_method[request_elements_attributes][4][name]" size="30" type="text" value="name" />
+      <input id="api_method_request_elements_attributes_4_description" name="api_method[request_elements_attributes][4][description]" size="30" type="text" value="" />
+	  <input id="api_method_request_elements_attributes_4_default_value" name="api_method[request_elements_attributes][4][default_value]" size="30" type="text" value="" />
+      <select id="api_method_request_elements_attributes_4_required" name="api_method[request_elements_attributes][4][required]"><option value="Yes" selected="selected">Yes</option>
+<option value="No">No</option></select>
+	  <input id="api_method_request_elements_attributes_4__destroy" name="api_method[request_elements_attributes][4][_destroy]" type="hidden" value="false" /><a href="javascript:void(0)" class="i icon-remove remove_nested_fields"></a>
+<input id="api_method_request_elements_attributes_4_id" name="api_method[request_elements_attributes][4][id]" type="hidden" value="29" /></div>	<p><a href="javascript:void(0)" class="i icon-plus add_nested_fields" data-association="request_elements">Elements</a></p>
+</ol></fieldset></form><div id="response_elements_fields_blueprint" style="display: none"><div class="fields">
+	  <input id="api_method_response_elements_attributes_new_response_elements_name" name="api_method[response_elements_attributes][new_response_elements][name]" size="30" type="text" />
+      <input id="api_method_response_elements_attributes_new_response_elements_description" name="api_method[response_elements_attributes][new_response_elements][description]" size="30" type="text" />
+	  <input id="api_method_response_elements_attributes_new_response_elements__destroy" name="api_method[response_elements_attributes][new_response_elements][_destroy]" type="hidden" value="false" /><a href="javascript:void(0)" class="i icon-remove remove_nested_fields"></a>
+</div></div> <div id="request_elements_fields_blueprint" style="display: none"><div class="fields">
+	  <input id="api_method_request_elements_attributes_new_request_elements_name" name="api_method[request_elements_attributes][new_request_elements][name]" size="30" type="text" />
+      <input id="api_method_request_elements_attributes_new_request_elements_description" name="api_method[request_elements_attributes][new_request_elements][description]" size="30" type="text" />
+	  <input id="api_method_request_elements_attributes_new_request_elements_default_value" name="api_method[request_elements_attributes][new_request_elements][default_value]" size="30" type="text" />
+      <select id="api_method_request_elements_attributes_new_request_elements_required" name="api_method[request_elements_attributes][new_request_elements][required]"><option value="Yes">Yes</option>
+<option value="No">No</option></select>
+	  <input id="api_method_request_elements_attributes_new_request_elements__destroy" name="api_method[request_elements_attributes][new_request_elements][_destroy]" type="hidden" value="false" /><a href="javascript:void(0)" class="i icon-remove remove_nested_fields"></a>
+</div></div>
+
+
+<a href="../index.html">Show</a> |
+<a href="../../index.html">Back</a>
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

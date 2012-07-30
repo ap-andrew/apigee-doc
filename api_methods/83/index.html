@@ -1,0 +1,117 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Update a User :: /users/{userID}</h1> 
+</p>
+
+<!-- <a href="/api_methods/83/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Users
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+PUT
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Updates a User profile with a new profile
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u {myname:mypass} &quot;https://api.enterprise.apigee.com/v1/o/{myorg}/users/{userID}&quot;  -X POST -d'
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;emailId&quot; : &quot;guest@apigee.com&quot;,
+  &quot;firstName&quot; : &quot;Guest&quot;,
+  &quot;id&quot; : &quot;guest@apigee.com&quot;,
+  &quot;lastName&quot; : &quot;NoLOnger&quot;
+}
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  Success 204 with no content
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

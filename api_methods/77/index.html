@@ -1,0 +1,168 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Get Statistics for an Environment :: /environments/{environmentName}/stats/?select={metrics}&amp;timeRange={startDate~endDate}&amp;timeUnit={unit}</h1> 
+</p>
+
+<!-- <a href="/api_methods/77/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Analytics
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+GET
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Gets statistics for a specified time range for the environment specified. Available staistics are message count, error count, and API count.
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass 'https://api.enterprise.apigee.com/v1/o/{myorg}/environments/test/stats/?select=message_count&amp;timeRange=7%2F1%2F2012%2000%3A00~8%2F1%2F2012%2000%3A00&amp;timeUnit=hour
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;environments&quot; : [ {
+    &quot;metrics&quot; : [ {
+      &quot;name&quot; : &quot;message_count&quot;,
+      &quot;values&quot; : [ {
+        &quot;timestamp&quot; : 1342285200000,
+        &quot;value&quot; : &quot;6.0&quot;
+      }, {
+        &quot;timestamp&quot; : 1342400400000,
+        &quot;value&quot; : &quot;3.0&quot;
+      }, {
+        &quot;timestamp&quot; : 1342411200000,
+        &quot;value&quot; : &quot;2.0&quot;
+      }, {
+        &quot;timestamp&quot; : 1342447200000,
+        &quot;value&quot; : &quot;1.0&quot;
+      }, {
+        &quot;timestamp&quot; : 1342458000000,
+        &quot;value&quot; : &quot;1.0&quot;
+      }, {
+        &quot;timestamp&quot; : 1342526400000,
+        &quot;value&quot; : &quot;12.0&quot;
+      }, {
+        &quot;timestamp&quot; : 1342530000000,
+        &quot;value&quot; : &quot;8.0&quot;
+      }, {
+        &quot;timestamp&quot; : 1342533600000,
+        &quot;value&quot; : &quot;15.0&quot;
+      }, {
+        &quot;timestamp&quot; : 1342537200000,
+        &quot;value&quot; : &quot;17.0&quot;
+      }, {
+        &quot;timestamp&quot; : 1342540800000,
+        &quot;value&quot; : &quot;1.0&quot;
+      }, {
+        &quot;timestamp&quot; : 1342544400000,
+        &quot;value&quot; : &quot;6.0&quot;
+      }, {
+        &quot;timestamp&quot; : 1342548000000,
+        &quot;value&quot; : &quot;11.0&quot;
+      }, {
+        &quot;timestamp&quot; : 1342551600000,
+        &quot;value&quot; : &quot;2.0&quot;
+      }, {
+        &quot;timestamp&quot; : 1342573200000,
+        &quot;value&quot; : &quot;1.0&quot;
+      }, {
+        &quot;timestamp&quot; : 1343163600000,
+        &quot;value&quot; : &quot;5.0&quot;
+      } ]
+    } ],
+    &quot;name&quot; : &quot;test&quot;
+  } ],
+  &quot;metaData&quot; : {
+  }
+
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+- application/octet-stream
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

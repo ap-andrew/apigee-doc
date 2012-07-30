@@ -1,0 +1,205 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>List Authorization Codes :: /oauth2/authorizationcodes</h1> 
+</p>
+
+<!-- <a href="/api_methods/107/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Oauth 2.0 Authorization Code
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+GET
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Lists all the Authorization Codes in an Organization
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/oauth2/authorizationcodes
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;authorizationCode&quot; : [ {
+    &quot;attributes&quot; : [ {
+      &quot;name&quot; : &quot;region&quot;,
+      &quot;value&quot; : &quot;south&quot;
+    } ],
+    &quot;client_id&quot; : &quot;kjvzAT2kR03jcZGQDod6VtMt8Lj0Ce6c&quot;,
+    &quot;code&quot; : &quot;m9PEEI6I&quot;,
+    &quot;createdAt&quot; : 1343043442176,
+    &quot;createdBy&quot; : &quot;Admin&quot;,
+    &quot;expiresAt&quot; : 1343045242176,
+    &quot;issuedAt&quot; : 1343043442176,
+    &quot;lastModifiedAt&quot; : 1343043442176,
+    &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
+    &quot;scope&quot; : &quot;&quot;,
+    &quot;status&quot; : &quot;active&quot;
+  },
+  {...}
+ ]
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_22">
+<td>attributes: </td>
+<td></td>
+<td><a href="../../response_elements/22/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/107?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_23">
+<td>client_id: </td>
+<td></td>
+<td><a href="../../response_elements/23/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/107?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_24">
+<td>code: </td>
+<td></td>
+<td><a href="../../response_elements/24/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/107?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_25">
+<td>createdAt: </td>
+<td></td>
+<td><a href="../../response_elements/25/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/107?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_26">
+<td>createdBy: </td>
+<td></td>
+<td><a href="../../response_elements/26/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/107?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_27">
+<td>expiresAt: </td>
+<td></td>
+<td><a href="../../response_elements/27/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/107?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_28">
+<td>issuedAt: </td>
+<td></td>
+<td><a href="../../response_elements/28/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/107?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_29">
+<td>lastModifiedAt: </td>
+<td></td>
+<td><a href="../../response_elements/29/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/107?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_30">
+<td>lastModifiedBy: </td>
+<td></td>
+<td><a href="../../response_elements/30/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/107?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_31">
+<td>scope: </td>
+<td></td>
+<td><a href="../../response_elements/31/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/107?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_32">
+<td>status: </td>
+<td></td>
+<td><a href="../../response_elements/32/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/107?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  Failure 500 with proper error message
+{
+  &quot;code&quot; : &quot;keymanagement.service.invalid_request-authorization_code_invalid&quot;,
+  &quot;message&quot; : &quot;Unable to fetch authorization code details&quot;,
+  &quot;contexts&quot; : [ ]
+}
+
+Error Codes:
+1. keymanagement.service.authorization_codes_fetch_failed
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+---
+- ''
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

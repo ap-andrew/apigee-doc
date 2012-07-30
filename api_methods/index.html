@@ -1,0 +1,2504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee Enterprise API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="9fYR0e9xO+mdsyVNFR5QKsBHzXQgoMRB432o6aBmh2s=" name="csrf-token" />
+    <link href="../assets/application-a2cf2fc60e7f628224d6179e9acb6bde.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="../assets/application-3d91ebb39ac1bf40fce53b1fddef09ec.js" type="text/javascript"></script>
+	
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link href="../favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link href="../images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="../images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="../images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+
+  </head>
+
+
+  <body>
+
+
+    <!-- <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+		<a class="brand" href="#">Apigee Enterprise API</a>
+
+        <div class="container">
+            <ul class="nav">
+	          <li><a href="/quick_starts">Quick Starts</a></li>
+              <li><a href="/api_resources">API Resources</a></li>
+              <li><a href="/api_methods">API Methods</a></li>
+              <li><a href="/parameters">Parameters</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            
+<p>Total API Methods: 149</p>
+
+<div class=btn>
+<a href="new/index.html">Add an API Method</a>
+</div>
+
+
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Analytics</h1>
+	<tr>
+		<td colspan="1"><h4>Get API Statistics</h4></td>
+	    <td colspan="1"><h4>71</h4></td>
+		<td><a href="71/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Use the GET method to retrieve metrics for all the APIs for an organization and environment.</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/environments/{environmentName}/stats/apis</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Statistics for Top APIs</h4></td>
+	    <td colspan="1"><h4>72</h4></td>
+		<td><a href="72/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Returns 5 APIs with the highest number of active end users (app end users with throughput) in the last 24 hours. </td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/environments/{environmentName}/stats/apis</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Statistics for an API Resource</h4></td>
+	    <td colspan="1"><h4>73</h4></td>
+		<td><a href="73/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/environments/{environmentName}/stats/apis/{apiName}/resources</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Statistics for top Apps</h4></td>
+	    <td colspan="1"><h4>74</h4></td>
+		<td><a href="74/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Use the GET method to retrieve the metrics for the first five apps for a given customer in a specific organization and environment.  </td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/environments/{environmentName}/stats/apps</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Statistics for top Developers</h4></td>
+	    <td colspan="1"><h4>75</h4></td>
+		<td><a href="75/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Use the GET method to retrieve the metrics for developers in a specific organization and environment</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/environments/{environmentName}/stats/devs</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Statistics on all API traffic</h4></td>
+	    <td colspan="1"><h4>76</h4></td>
+		<td><a href="76/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Retrieve the metrics for all the available APIs for a given customer in a specific organization and environment.</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/environments/{environment_name}/stats/?select={metrics}&amp;timeRange={startDate~endDate}&amp;timeUnit={unit}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Statistics for an Environment</h4></td>
+	    <td colspan="1"><h4>77</h4></td>
+		<td><a href="77/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets statistics for a specified time range for the environment specified. Available staistics are message count, error count, and API count.</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/environments/{environmentName}/stats/?select={metrics}&amp;timeRange={startDate~endDate}&amp;timeUnit={unit}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Custom Report</h4></td>
+	    <td colspan="1"><h4>78</h4></td>
+		<td><a href="78/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Enables the generation of a custom report that incorporates dimensions, measures, and filters.</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/environments/{environmentName}/stats/{customVariable}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">API Products</h1>
+	<tr>
+		<td colspan="1"><h4>List API Products</h4></td>
+	    <td colspan="1"><h4>4</h4></td>
+		<td><a href="4/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Lists all APi Products by name for an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apiproducts</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get count of keys/apps/developers/companies for API Product</h4></td>
+	    <td colspan="1"><h4>10</h4></td>
+		<td><a href="10/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets a count of one of the entities (either keys/apps/developers/companies ) associated with a given API Product</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apiproducts/{apiproductName}?query=count&amp;entity=keys/apps/developers/companies</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get list of keys/apps/developers/companies for API Product</h4></td>
+	    <td colspan="1"><h4>11</h4></td>
+		<td><a href="11/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets the List of keys/apps/developers for an API product of an organization </td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apiproducts/{apiproductName}?query=list&amp;entity=keys/apps/developers/companies</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Update API Product</h4></td>
+	    <td colspan="1"><h4>12</h4></td>
+		<td><a href="12/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Updates an existing APi Product</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">PUT</span></td>
+    	<td>/apiproducts/{apiproductName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete an API Poduct</h4></td>
+	    <td colspan="1"><h4>13</h4></td>
+		<td><a href="13/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Deletes an API Product</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/apiproducts/{apiproductName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Create an API Product</h4></td>
+	    <td colspan="1"><h4>16</h4></td>
+		<td><a href="16/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Create an API product to enable developers to access a set of API resources (URIs)</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/apiproducts</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get an API Product</h4></td>
+	    <td colspan="1"><h4>86</h4></td>
+		<td><a href="86/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets an API Product</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apiproducts</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">APIs</h1>
+	<tr>
+		<td colspan="1"><h4>List APIs</h4></td>
+	    <td colspan="1"><h4>1</h4></td>
+		<td><a href="1/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets all APIs in an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apis</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Update an API</h4></td>
+	    <td colspan="1"><h4>2</h4></td>
+		<td><a href="2/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Use the POST method to update a specific API proxy in an organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/apis/{apiName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete an API</h4></td>
+	    <td colspan="1"><h4>3</h4></td>
+		<td><a href="3/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/apis/{apiname}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Create an API</h4></td>
+	    <td colspan="1"><h4>15</h4></td>
+		<td><a href="15/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Create an API definition and an API proxy configuration on Apigee Enterprise</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/apis</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Import an API</h4></td>
+	    <td colspan="1"><h4>24</h4></td>
+		<td><a href="24/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Upload an API proxy from a local machine to Apigee</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/apis?action=import&amp;name={apiName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Deploy an API to an Environment</h4></td>
+	    <td colspan="1"><h4>25</h4></td>
+		<td><a href="25/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Pushes an API to an environment (typically 'test' or 'prod')for execution</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apis/{apiName}/revisions/{revision}/deployments?action=deploy&amp;env={envName}&amp;basepath={/basepath}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Undeploy an API from an Environment</h4></td>
+	    <td colspan="1"><h4>26</h4></td>
+		<td><a href="26/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Removes an API from an environment (typically 'test' or 'prod')</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apis/{apiName}/deployments?action=undeploy&amp;env={envName}&amp;revision={revision}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete an API Revision</h4></td>
+	    <td colspan="1"><h4>27</h4></td>
+		<td><a href="27/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Deletes a specific revision of an API</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/apis/{apiName}/revision/{revisionNumber}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get an API</h4></td>
+	    <td colspan="1"><h4>104</h4></td>
+		<td><a href="104/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets an API, providing a pointer to existing revisions of the API.</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apis/{apiName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Export an API</h4></td>
+	    <td colspan="1"><h4>105</h4></td>
+		<td><a href="105/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Exports an API from Apigee to the local machine a ZIP bundle of config and code files.</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apis/{apiName}?format=bundle</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">App Family</h1>
+	<tr>
+		<td colspan="1"><h4>Create an App Family</h4></td>
+	    <td colspan="1"><h4>125</h4></td>
+		<td><a href="125/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Create an App Family for Developers</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/developers/{developerEmail}/appfamilies</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get App Family</h4></td>
+	    <td colspan="1"><h4>126</h4></td>
+		<td><a href="126/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets the Apps in an App Family for a Developer</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/{developerEmail}/appfamilies/{appFamily}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Update an App Family</h4></td>
+	    <td colspan="1"><h4>127</h4></td>
+		<td><a href="127/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Updates an existing App Family</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/developers/{developerEmail}/appfamilies/{appfamilyName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Remove App from App Family</h4></td>
+	    <td colspan="1"><h4>128</h4></td>
+		<td><a href="128/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Removes an App from an App Family</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/developers/{developerEmail}/appfamilies/{appFamily}/app/{appName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete App Family</h4></td>
+	    <td colspan="1"><h4>129</h4></td>
+		<td><a href="129/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Deletes an App Family and all Apps it contains</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/developers/{developeremail}/appfamilies/{appFamily}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>List App Families</h4></td>
+	    <td colspan="1"><h4>130</h4></td>
+		<td><a href="130/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">List all App Families in an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/{developeremail}/appFamilies</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>List App Families (Expanded)</h4></td>
+	    <td colspan="1"><h4>131</h4></td>
+		<td><a href="131/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">An expanded list of all App Families in an Organization, listing Apps in the collection </td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/{developeremail}/appfamilies?expand=true</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Apps</h1>
+	<tr>
+		<td colspan="1"><h4>Get Apps by Status</h4></td>
+	    <td colspan="1"><h4>134</h4></td>
+		<td><a href="134/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Returns all apps with the status of approved,revoked,pending</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apps?status={status}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Apps by Type</h4></td>
+	    <td colspan="1"><h4>135</h4></td>
+		<td><a href="135/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">List all app by apptype, wither company or developer.</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apps?apptype={appType}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Apps by App Family</h4></td>
+	    <td colspan="1"><h4>136</h4></td>
+		<td><a href="136/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">List all Apps in an App Familty</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apps?appfamily={appFamily}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>List Apps by Creation Date</h4></td>
+	    <td colspan="1"><h4>137</h4></td>
+		<td><a href="137/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">List all Apps created on the specified date (date formatted as Unix time)</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apps?createdat={createdAt}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Companies</h1>
+	<tr>
+		<td colspan="1"><h4>List Companies</h4></td>
+	    <td colspan="1"><h4>6</h4></td>
+		<td><a href="6/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">List all Companies in an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/companies</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Create a Company</h4></td>
+	    <td colspan="1"><h4>117</h4></td>
+		<td><a href="117/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Creates a Company in an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/companies</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Update a Company</h4></td>
+	    <td colspan="1"><h4>118</h4></td>
+		<td><a href="118/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Updates an existing Company</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/companies/{companyName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Details for a Company</h4></td>
+	    <td colspan="1"><h4>119</h4></td>
+		<td><a href="119/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets details for a Company</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td> /companies/{companyName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete a Company</h4></td>
+	    <td colspan="1"><h4>120</h4></td>
+		<td><a href="120/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Deletes an existing Company</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/companies/{companyname}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>List Companies (Expanded)</h4></td>
+	    <td colspan="1"><h4>121</h4></td>
+		<td><a href="121/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Returns an expanded list of Companies, displaying a full profile for each Company in the Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/organizations/{organizationname}/companies?expand=true</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Company App Families</h1>
+	<tr>
+		<td colspan="1"><h4>Create Company App Famiy</h4></td>
+	    <td colspan="1"><h4>54</h4></td>
+		<td><a href="54/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/companies/{companyname}/appfamilies/</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get a Company App Famiy</h4></td>
+	    <td colspan="1"><h4>55</h4></td>
+		<td><a href="55/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/companies/{companyname}/appfamilies/{appfamily}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Update Company App Famiy</h4></td>
+	    <td colspan="1"><h4>56</h4></td>
+		<td><a href="56/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/companies/{companyName}/appfamilies/{appfamilyName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete App from Company App Family</h4></td>
+	    <td colspan="1"><h4>57</h4></td>
+		<td><a href="57/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Removes an associsation between a Company App and a Company App Family</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/companies/{companyName}/appfamilies/{appfamilyName}/app/{appName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete a Company App Family</h4></td>
+	    <td colspan="1"><h4>58</h4></td>
+		<td><a href="58/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Deletes a Company App Family</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/companies/{companyName}/appfamilies/{appfamilyName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>List Company App Families</h4></td>
+	    <td colspan="1"><h4>59</h4></td>
+		<td><a href="59/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">List Company App Families in an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/companies/{companyName}/appfamilies</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Company App Keys</h1>
+	<tr>
+		<td colspan="1"><h4>Update existing App Key with New ApiProduct(s).</h4></td>
+	    <td colspan="1"><h4>49</h4></td>
+		<td><a href="49/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Update existing App Key with New ApiProduct(s).</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/companies/{companyName}/apps/{appName}/keys/{consumerkey}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get a specific Key of Company App</h4></td>
+	    <td colspan="1"><h4>50</h4></td>
+		<td><a href="50/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Get a specific key of a company app</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/companies/{companyName}/apps/{appName}/keys/{consumerKey}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete a Company App Key</h4></td>
+	    <td colspan="1"><h4>51</h4></td>
+		<td><a href="51/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Deletes a Company App Key</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/companies/{companyName}/apps/{appName}/keys/{consumerKey}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Revoke a Company App Key</h4></td>
+	    <td colspan="1"><h4>52</h4></td>
+		<td><a href="52/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Revokes the App Key of a Company App</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>companies/{companyName}/apps/{appName}/keys/{consumerkey}?action=revoke</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Approve a Company App Key</h4></td>
+	    <td colspan="1"><h4>53</h4></td>
+		<td><a href="53/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Changes state of Consumer Key provisioned to Company App to 'Approved'</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/companies/{companyName}/apps/{appName}/keys/{consumerkey}?action=approve</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Company Apps</h1>
+	<tr>
+		<td colspan="1"><h4>Create Company App</h4></td>
+	    <td colspan="1"><h4>64</h4></td>
+		<td><a href="64/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Create App for a Company</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/companies/{companyName}/apps</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Update a Company App</h4></td>
+	    <td colspan="1"><h4>65</h4></td>
+		<td><a href="65/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Update an existing Company App</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">PUT</span></td>
+    	<td>/companies/{companyName}/apps/{appName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get count of APi Resources for Company App</h4></td>
+	    <td colspan="1"><h4>66</h4></td>
+		<td><a href="66/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets the count API Resources for a Company App</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/companies/{companyName}/apps/{appname}?query=count&amp;entity=apiresources</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete a Company App</h4></td>
+	    <td colspan="1"><h4>67</h4></td>
+		<td><a href="67/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/companies/{companyName}/apps/{appName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>List Company Apps</h4></td>
+	    <td colspan="1"><h4>68</h4></td>
+		<td><a href="68/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">List Company Apps in an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/companies/{companyName}/apps</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>List Company Apps (Expanded)</h4></td>
+	    <td colspan="1"><h4>69</h4></td>
+		<td><a href="69/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets an expanded list Company Apps, which included App details</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/companies/{companyName}/apps?expand=true</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Create App for a Company</h4></td>
+	    <td colspan="1"><h4>98</h4></td>
+		<td><a href="98/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Create an App for a Company</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/companies/{companyname}/apps</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Update Company App</h4></td>
+	    <td colspan="1"><h4>99</h4></td>
+		<td><a href="99/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Updates an existing Company App with a new profile</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">PUT</span></td>
+    	<td>/companies/{companyname}/apps/{appName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Update a Company App with a New API Product</h4></td>
+	    <td colspan="1"><h4>132</h4></td>
+		<td><a href="132/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Update existing App Key with New ApiProduct(s). New ApiProduct(s) will merge existing ApiProduct(s).</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/companies/{companyName}/apps/{appName}/keys/{consumerKey}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Company Developers</h1>
+	<tr>
+		<td colspan="1"><h4>Add a Company Developer</h4></td>
+	    <td colspan="1"><h4>122</h4></td>
+		<td><a href="122/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Adds a Developer to a Company</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/companies/{companyName}/developers</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Remove a Developer from a Company</h4></td>
+	    <td colspan="1"><h4>123</h4></td>
+		<td><a href="123/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Removes the association of a Developer with a Company</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/companies/{companyname}/developers/{developerEmail}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>List Developers in a Company</h4></td>
+	    <td colspan="1"><h4>124</h4></td>
+		<td><a href="124/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Lists all Developers associated with a Company</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/companies/{companyname}/developers/</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Debug Sessions</h1>
+	<tr>
+		<td colspan="1"><h4>Get Debug Sessions</h4></td>
+	    <td colspan="1"><h4>7</h4></td>
+		<td><a href="7/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td></td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Create Debug Session</h4></td>
+	    <td colspan="1"><h4>41</h4></td>
+		<td><a href="41/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Creates a Debug session on Apigee</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/environments/{environmentName} /apis/{apiName}/revisions/{revisionVersion}/debugsessions/{sessionID}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Debug Session Data</h4></td>
+	    <td colspan="1"><h4>42</h4></td>
+		<td><a href="42/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/environments/{environmentName}/apis/{apiName}/revisions/{revisionId/debugsessions/{debugSessionId}/data</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete a Debug Session</h4></td>
+	    <td colspan="1"><h4>43</h4></td>
+		<td><a href="43/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/environments/{environmentName} /apis/{apiName}/revisions/{revisionVersion}/debugsessions/{sessionID}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Deployments</h1>
+	<tr>
+		<td colspan="1"><h4>List Revision Deployments</h4></td>
+	    <td colspan="1"><h4>8</h4></td>
+		<td><a href="8/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/environments/{environmentName}/apis/{apiproxyName}/revisions/{revisionNumber}/deployments</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get API Deployments</h4></td>
+	    <td colspan="1"><h4>18</h4></td>
+		<td><a href="18/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apis/{apiName}/deployments</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get API Revision Deployments</h4></td>
+	    <td colspan="1"><h4>19</h4></td>
+		<td><a href="19/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Get Deployments for an API Revision</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apis/{apiproxyName}/revisions/{revisionNumber}/deployments</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Deployments for an Environment</h4></td>
+	    <td colspan="1"><h4>20</h4></td>
+		<td><a href="20/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets a list of all API deployments in a given environment, along with deployment status and other metadata</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/environments/{environmentName}/deployments</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Deployment Status</h4></td>
+	    <td colspan="1"><h4>28</h4></td>
+		<td><a href="28/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apis/{apiName}/deployments</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Deployment Status for a Revision</h4></td>
+	    <td colspan="1"><h4>29</h4></td>
+		<td><a href="29/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/apis/{apiName}/revisions/{revisionNumber}/deployments</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>List Deployments</h4></td>
+	    <td colspan="1"><h4>60</h4></td>
+		<td><a href="60/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets all API deployments for an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/deployments</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Deployments for an Organization</h4></td>
+	    <td colspan="1"><h4>112</h4></td>
+		<td><a href="112/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Returns all deployments for all APIs in an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/deployments</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Developer app access tokens</h1>
+	<tr>
+		<td colspan="1"><h4>Get count of Oauth 1.0 Access Tokens for  Developer App</h4></td>
+	    <td colspan="1"><h4>139</h4></td>
+		<td><a href="139/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Get count of Oauth1.0 Access Tokens for a Developer app</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/{developerName}/apps/{appName}/oauth1accesstokens </td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get count of Oauth 2.0 Access Tokens for  Developer App</h4></td>
+	    <td colspan="1"><h4>140</h4></td>
+		<td><a href="140/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Get count of  Oauth2.0 Access Tokens for a Developer app</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/{developerName}/apps/{appName}/oauth2accesstokens</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Developer app key access tokens</h1>
+	<tr>
+		<td colspan="1"><h4>Get count of Oauth 1.0 Access Tokens for  Developer App Key</h4></td>
+	    <td colspan="1"><h4>141</h4></td>
+		<td><a href="141/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Get count of Oauth1.0 Access Tokens for a Developer App Key</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/{developerName}/apps/{appName}/keys/{consumerkey}/oauth1accesstokens</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get count of Oauth 2.0 Access Tokens for  Developer App Key</h4></td>
+	    <td colspan="1"><h4>142</h4></td>
+		<td><a href="142/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Get count of Oauth2.0 Access Tokens for a Developer app key</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/{developerName}/apps/{appName}/oauth1accesstokens</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Developer App Keys</h1>
+	<tr>
+		<td colspan="1"><h4>Update Key with ApiProduct(s)</h4></td>
+	    <td colspan="1"><h4>89</h4></td>
+		<td><a href="89/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Adds an API Product to a Developer App Key</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/developers/{developerName}/apps/{appName}/keys/{consumerKey}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get a specific Key of Developer App</h4></td>
+	    <td colspan="1"><h4>90</h4></td>
+		<td><a href="90/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/{developerName}/apps/{appName}/keys/{consumerKey}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete a Developer App Key</h4></td>
+	    <td colspan="1"><h4>91</h4></td>
+		<td><a href="91/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/developers/{developerName}/apps/{appName}/keys/{consumerKey}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Revoke a Developer App Key</h4></td>
+	    <td colspan="1"><h4>92</h4></td>
+		<td><a href="92/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/developers/{developerName}/apps/{appName}/keys/{consumerKey}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Approve a Developer App Key</h4></td>
+	    <td colspan="1"><h4>93</h4></td>
+		<td><a href="93/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/developers/{developerName}/apps/{appName}/keys/{consumerKey}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Revoke APIProduct of a specific Key of Developer App</h4></td>
+	    <td colspan="1"><h4>94</h4></td>
+		<td><a href="94/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Revokes the association of an API Product with a Developer App's consumer key.</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/developers/{developerName}/apps/{appName}/keys/{consumerkey}/apiproducts/{apiproduct_name}?action=revoke</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Approve APIProduct for the Key of Developer App</h4></td>
+	    <td colspan="1"><h4>95</h4></td>
+		<td><a href="95/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Approves the association of a Developer App's consumer key with an APi Product</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/developers/{developerName}/apps/{appName}/keys/{consumerkey}/apiproducts/{apiproductName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Developer Apps</h1>
+	<tr>
+		<td colspan="1"><h4>List Apps by Developer</h4></td>
+	    <td colspan="1"><h4>5</h4></td>
+		<td><a href="5/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">List all Apps created by a Developer in an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/{developerName}/apps</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Create a Developer App</h4></td>
+	    <td colspan="1"><h4>14</h4></td>
+		<td><a href="14/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Creates an App associated with a Developer</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/developers/{developerName}/apps</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Update a Developer App</h4></td>
+	    <td colspan="1"><h4>30</h4></td>
+		<td><a href="30/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Updates the app to get a new set of consumer credentials. </td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">PUT</span></td>
+    	<td>/developers/{developerName}/apps/{appName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete a Developer App</h4></td>
+	    <td colspan="1"><h4>31</h4></td>
+		<td><a href="31/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Delete a Developer's App</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/developers/{developerName}/apps/{appName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get a Developer App</h4></td>
+	    <td colspan="1"><h4>87</h4></td>
+		<td><a href="87/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Get the profile of a Developer App</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/{developerName}/apps/{appName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Approve a Developer App</h4></td>
+	    <td colspan="1"><h4>88</h4></td>
+		<td><a href="88/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/{developerName}/apps/{appName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>List Developer Apps (Expanded)</h4></td>
+	    <td colspan="1"><h4>96</h4></td>
+		<td><a href="96/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Provides an expanded view of Apps and details for a Developer</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/{developerName}/apps?expand=true</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Revoke a Developer App</h4></td>
+	    <td colspan="1"><h4>97</h4></td>
+		<td><a href="97/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Revokes a Developer App, disabling access to all API Products</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/{developerName}/apps/{appName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Gets the count of apiresources for a developer app in an organization</h4></td>
+	    <td colspan="1"><h4>133</h4></td>
+		<td><a href="133/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets a count of all API Resources (URIs) in the API Products accessible by an App</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/{developerName}/apps/{appname}?query=count&amp;entity=apiresources</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Developers</h1>
+	<tr>
+		<td colspan="1"><h4>List Developers</h4></td>
+	    <td colspan="1"><h4>9</h4></td>
+		<td><a href="9/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Lists all developers by email address (the unique key for developers in Apigee)</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Create a Developer</h4></td>
+	    <td colspan="1"><h4>32</h4></td>
+		<td><a href="32/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Create a developer in an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/developers</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get a Developer </h4></td>
+	    <td colspan="1"><h4>34</h4></td>
+		<td><a href="34/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Returns the profile for the Developer by email address.</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/developerEmail}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Count of Apps by Developer</h4></td>
+	    <td colspan="1"><h4>35</h4></td>
+		<td><a href="35/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Get a count of Apps by Developer</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>developers/{developerName}?query=count&amp;entity=apps</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Getting Developer for an App</h4></td>
+	    <td colspan="1"><h4>36</h4></td>
+		<td><a href="36/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Get the Developer associated with an App</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers?app={appName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Getting developers by registration date</h4></td>
+	    <td colspan="1"><h4>37</h4></td>
+		<td><a href="37/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/{developername}?registereddate={registeredDate}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Update a Developer</h4></td>
+	    <td colspan="1"><h4>38</h4></td>
+		<td><a href="38/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers/{developerName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete a Developer</h4></td>
+	    <td colspan="1"><h4>39</h4></td>
+		<td><a href="39/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Deletes a Developer from an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/developers/{developerName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Set a Developer's Status</h4></td>
+	    <td colspan="1"><h4>40</h4></td>
+		<td><a href="40/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Sets the status of a developer</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>developers/{developerName}?action={newStatus}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Developer of an App</h4></td>
+	    <td colspan="1"><h4>138</h4></td>
+		<td><a href="138/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets the Developer profile by App name</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/developers?app={appName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Environments</h1>
+	<tr>
+		<td colspan="1"><h4>List Environments</h4></td>
+	    <td colspan="1"><h4>21</h4></td>
+		<td><a href="21/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/environments</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Environment</h4></td>
+	    <td colspan="1"><h4>113</h4></td>
+		<td><a href="113/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets details for an environment</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/environments/{environmentName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Maps</h1>
+	<tr>
+		<td colspan="1"><h4>Create Map</h4></td>
+	    <td colspan="1"><h4>44</h4></td>
+		<td><a href="44/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td></td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get Map</h4></td>
+	    <td colspan="1"><h4>45</h4></td>
+		<td><a href="45/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td></td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>List Maps</h4></td>
+	    <td colspan="1"><h4>46</h4></td>
+		<td><a href="46/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td></td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete Entry</h4></td>
+	    <td colspan="1"><h4>48</h4></td>
+		<td><a href="48/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/maps/{mapName}/entries/{entryName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Update Map</h4></td>
+	    <td colspan="1"><h4>62</h4></td>
+		<td><a href="62/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">PUT</span></td>
+    	<td>/maps/{mapName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete Map</h4></td>
+	    <td colspan="1"><h4>63</h4></td>
+		<td><a href="63/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/maps/{mapName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Oauth 1.0a Access Tokens</h1>
+	<tr>
+		<td colspan="1"><h4>Get Oauth 1.0 Access Token</h4></td>
+	    <td colspan="1"><h4>152</h4></td>
+		<td><a href="152/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Fetches the details of given access token</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/organizations/{org}/oauth1/accesstokens/{accesstoken}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get count of Oauth 1.0 Access Tokens</h4></td>
+	    <td colspan="1"><h4>153</h4></td>
+		<td><a href="153/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/oauth1/accesstokens</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Update Oauth 1.0 Access Token</h4></td>
+	    <td colspan="1"><h4>154</h4></td>
+		<td><a href="154/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Updates the attributes of given accesstoken</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/oauth1/accesstokens/{accesstoken}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete Oauth 1.0 Access Token</h4></td>
+	    <td colspan="1"><h4>155</h4></td>
+		<td><a href="155/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Deletes the specified access token</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/oauth1/accesstokens/{accesstoken}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Approve Oauth 1.0  Access Token</h4></td>
+	    <td colspan="1"><h4>156</h4></td>
+		<td><a href="156/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Approves the specified Access Token</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/oauth1/accesstokens/{accesstoken}?action=approve</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Revoke Oauth 1.0 Access Token</h4></td>
+	    <td colspan="1"><h4>157</h4></td>
+		<td><a href="157/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Revokes the issued accesstoken</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/oauth1/accesstokens/{accesstoken}?action=revoke</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Oauth 1.0a Request Tokens</h1>
+	<tr>
+		<td colspan="1"><h4>Get an Oauth 1.0a Request Token</h4></td>
+	    <td colspan="1"><h4>143</h4></td>
+		<td><a href="143/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/oauth/1/requesttokens/{requesttoken}?consumerKey=&lt;validconsumerkey&gt;</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>List Request Tokens</h4></td>
+	    <td colspan="1"><h4>144</h4></td>
+		<td><a href="144/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td></td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete a Request Token</h4></td>
+	    <td colspan="1"><h4>146</h4></td>
+		<td><a href="146/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/oauth/1/requesttokens/{requesttoken}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Approve a Request Token</h4></td>
+	    <td colspan="1"><h4>147</h4></td>
+		<td><a href="147/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/oauth/1/requesttokens/{requesttoken}?action=approve</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Revoke a Request Token</h4></td>
+	    <td colspan="1"><h4>148</h4></td>
+		<td><a href="148/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/oauth/1/requesttokens/{requesttoken}?action=revoke</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Oauth 1.0a Verifiers</h1>
+	<tr>
+		<td colspan="1"><h4>Get an Oauth 1.0 Verifier</h4></td>
+	    <td colspan="1"><h4>149</h4></td>
+		<td><a href="149/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets the detail of given verifier code</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/oauth/1/verifiers/{verifiercode}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>List Oauth 1.0 Verifiers</h4></td>
+	    <td colspan="1"><h4>150</h4></td>
+		<td><a href="150/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">List Oauth 1.0 Verifiers</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/oauth/1/verifiers</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete Oauth 1.0 Verifier</h4></td>
+	    <td colspan="1"><h4>151</h4></td>
+		<td><a href="151/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Deletes the issued verifier code</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/oauth/1/verifiers/{verifiercode}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Oauth 2.0 Access Tokens</h1>
+	<tr>
+		<td colspan="1"><h4>Get an Access Token</h4></td>
+	    <td colspan="1"><h4>109</h4></td>
+		<td><a href="109/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets details of a specific Access Token </td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/oauth2/accesstokens/{accessToken}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get count of AccessTokens</h4></td>
+	    <td colspan="1"><h4>110</h4></td>
+		<td><a href="110/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Get count of oauth 2.0 access tokens under an organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/oauth2/accesstokens</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Update Access Token</h4></td>
+	    <td colspan="1"><h4>111</h4></td>
+		<td><a href="111/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Updates the access token attributes.</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">PUT</span></td>
+    	<td>/oauth2/accesstokens/{accessToken}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete an Access Token</h4></td>
+	    <td colspan="1"><h4>114</h4></td>
+		<td><a href="114/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Deletes the Access Token specified</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/oauth2/accesstokens/{accesstoken}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Approve an Access Token</h4></td>
+	    <td colspan="1"><h4>115</h4></td>
+		<td><a href="115/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/oauth2/accesstokens/{accesstoken}?action=approve</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Revoke an Access Token</h4></td>
+	    <td colspan="1"><h4>116</h4></td>
+		<td><a href="116/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Deletes a specific Access Toekn</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/oauth2/accesstokens/{accesstoken}?action=revoke</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Update a Request Token</h4></td>
+	    <td colspan="1"><h4>145</h4></td>
+		<td><a href="145/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">PUT</span></td>
+    	<td>/oauth/1/requesttokens/{requesttoken}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Oauth 2.0 Authorization Code</h1>
+	<tr>
+		<td colspan="1"><h4>Get Authorization Code</h4></td>
+	    <td colspan="1"><h4>106</h4></td>
+		<td><a href="106/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Get a specific Authorization Code</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/oauth2/authorizationcodes/{authCode}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>List Authorization Codes</h4></td>
+	    <td colspan="1"><h4>107</h4></td>
+		<td><a href="107/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Lists all the Authorization Codes in an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/oauth2/authorizationcodes</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete Authorization Code</h4></td>
+	    <td colspan="1"><h4>108</h4></td>
+		<td><a href="108/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Deletes the given authorization Code.</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/oauth2/authorizationcodes/{authCode}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Organizations</h1>
+	<tr>
+		<td colspan="1"><h4>Get Organization</h4></td>
+	    <td colspan="1"><h4>61</h4></td>
+		<td><a href="61/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/o</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Revision Deployments</h1>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Revisions</h1>
+	<tr>
+		<td colspan="1"><h4>Export an API Revision</h4></td>
+	    <td colspan="1"><h4>70</h4></td>
+		<td><a href="70/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Exports an API revision (configuration and code) as a ZIP file</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/apis/{apiproxyName}/revisions/{revision}?format=bundle</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Users</h1>
+	<tr>
+		<td colspan="1"><h4>Create a User</h4></td>
+	    <td colspan="1"><h4>79</h4></td>
+		<td><a href="79/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Creates a user in an Apigee Enterprise Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">POST</span></td>
+    	<td>/users</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Authenticate a user</h4></td>
+	    <td colspan="1"><h4>80</h4></td>
+		<td><a href="80/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Authenticates a Apigee User within an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/users/{userName}/authenticate</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>List Users</h4></td>
+	    <td colspan="1"><h4>81</h4></td>
+		<td><a href="81/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets a list of all users in an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/users</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get a User</h4></td>
+	    <td colspan="1"><h4>82</h4></td>
+		<td><a href="82/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Gets a User in an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/users/{userID}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Update a User</h4></td>
+	    <td colspan="1"><h4>83</h4></td>
+		<td><a href="83/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Updates a User profile with a new profile</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">PUT</span></td>
+    	<td>/users/{userID}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Delete a User</h4></td>
+	    <td colspan="1"><h4>84</h4></td>
+		<td><a href="84/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3">Deletes a user from an Organization</td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">DELETE</span></td>
+    	<td>/users/{userID}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+<table class="table table-striped">
+	
+<tbody>
+<h1 class="lead">Virtual Hosts</h1>
+	<tr>
+		<td colspan="1"><h4>List Virtual Hosts for an Environment</h4></td>
+	    <td colspan="1"><h4>22</h4></td>
+		<td><a href="22/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/environments/{environmentName}/virtualhosts</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+	<tr>
+		<td colspan="1"><h4>Get a Virtual Host for an Environment</h4></td>
+	    <td colspan="1"><h4>23</h4></td>
+		<td><a href="23/index.html" class="btn btn-mini">Detail</a>
+
+	</tr>
+    <tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><span class="label label-success">GET</span></td>
+    	<td>/environments/{environmentName}/virtualhosts/{virtualhostName}</td>   
+    	<td>Basic Auth</td>
+
+   </tr>
+</tbody>
+</table>
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

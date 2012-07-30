@@ -1,0 +1,194 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Update existing App Key with New ApiProduct(s). :: /companies/{companyName}/apps/{appName}/keys/{consumerkey}</h1> 
+</p>
+
+<!-- <a href="/api_methods/49/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Company App Keys
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+POST
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  Update existing App Key with New ApiProduct(s).
+New ApiProduct(s) will merge existing ApiProduct(s).
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Update existing App Key with New ApiProduct(s).
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/organization/sears/companies/devcompany/apps/myapp/keys/1234567890
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;apiProducts&quot; : [&quot;TestApiProduct1&quot;,&quot;TestApiProduct2&quot;],
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;west&quot;
+  } ]
+}
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+
+<tr>
+<div class="request_element" id="request_element_23">
+<td>apiProducts</td>
+<td>An array of API Product names to be associated with this key</td>
+<td>N/A</td>
+<td>Yes</td>
+<td><a href="../../request_elements/23/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_24">
+<td>attributes</td>
+<td>Arbitrary, apps-specific attribues associated with this key</td>
+<td>N/A</td>
+<td>No</td>
+<td><a href="../../request_elements/24/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;apiProducts&quot; : [ {
+    &quot;apiproduct&quot; : &quot;TestApiProduct1&quot;,
+    &quot;status&quot; : &quot;approved&quot;
+  }, {
+    &quot;apiproduct&quot; : &quot;TestApiProduct2&quot;,
+    &quot;status&quot; : &quot;approved&quot;
+  } ],
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;west&quot;
+  } ],
+  &quot;consumerKey&quot; : &quot;{consumerkey}&quot;,
+  &quot;consumerSecret&quot; : &quot;{consumerSecret}&quot;,
+  &quot;status&quot; : &quot;approved&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_126">
+<td>apiproduct: </td>
+<td>An API Product associated with this key</td>
+<td><a href="../../response_elements/126/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/49?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_127">
+<td>status: </td>
+<td>The status of the key for this API Product</td>
+<td><a href="../../response_elements/127/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/49?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_128">
+<td>attributes: </td>
+<td>Arbitrary, app-specific attributes associated with this key</td>
+<td><a href="../../response_elements/128/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/49?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_129">
+<td>consumerKey: </td>
+<td>The value of the key</td>
+<td><a href="../../response_elements/129/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/49?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_130">
+<td>consumerSecret: </td>
+<td>The value of the secret associated with this key</td>
+<td><a href="../../response_elements/130/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/49?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  Failure 4xx with proper error message
+{
+  &quot;code&quot; : &quot;keymanagement.service.InvalidClientIdForGivenApp&quot;,
+  &quot;message&quot; : &quot;Invalid consumer key for Given App&quot;,
+  &quot;contexts&quot; : [ ]
+}
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+- application/json
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

@@ -1,0 +1,144 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Update Company App :: /companies/{companyname}/apps/{appName}</h1> 
+</p>
+
+<!-- <a href="/api_methods/99/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Company Apps
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+PUT
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Updates an existing Company App with a new profile
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u {myname:mypass} https://api.enterprise.apigee.comhttp://api.apigeng.com/v1/organizations/sears/companies/{companyName}/apps/{appName}
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  {{
+  &quot;accessType&quot; : &quot;read&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;Language&quot;,
+    &quot;value&quot; : &quot;java-j2ee&quot;
+  }],
+  &quot;callbackUrl&quot; : &quot;www.apigee.com&quot;
+}
+
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;accessType&quot; : &quot;read&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;Language&quot;,
+    &quot;value&quot; : &quot;java-j2ee&quot;
+  } ],
+  &quot;callbackUrl&quot; : &quot;www.apigee.com&quot;,
+  &quot;createdAt&quot; : 1343050516114,
+  &quot;createdBy&quot; : &quot;Admin&quot;,
+  &quot;credentials&quot; : [ {
+    &quot;apiProducts&quot; : [ {
+      &quot;apiproduct&quot; : &quot;TestApiProduct&quot;,
+      &quot;status&quot; : &quot;approved&quot;
+    } ],
+    &quot;attributes&quot; : [ ],
+    &quot;consumerKey&quot; : &quot;N6S0jcOhgbsCJD3B7EGNFo0FYAZSpCez&quot;,
+    &quot;consumerSecret&quot; : &quot;BCJpVuK3uq9VuEgK&quot;,
+    &quot;status&quot; : &quot;approved&quot;
+  } ],
+  &quot;lastModifiedAt&quot; : 1343050516317,
+  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
+  &quot;name&quot; : &quot;sandboxTestApp&quot;,
+  &quot;status&quot; : &quot;approved&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+- application/json
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

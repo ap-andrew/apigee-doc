@@ -1,0 +1,204 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Get an API Product :: /apiproducts</h1> 
+</p>
+
+<!-- <a href="/api_methods/86/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  API Products
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+GET
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  Gets the profile for an API Product by name. 
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Gets an API Product
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u {myname:mypass} &quot;https://api.enterprise.apigee.com/v1/o/{myorg}/apiproducts&quot; 
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;apiResources&quot; : [ &quot;/v2/**&quot;, &quot;/v1/receiveSMS&quot;, &quot;/v3/*/send&quot; ],
+  &quot;approvalType&quot; : &quot;auto&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;RateLimit&quot;,
+    &quot;value&quot; : &quot;100&quot;
+  }, {
+    &quot;name&quot; : &quot;Threshold&quot;,
+    &quot;value&quot; : &quot;50&quot;
+  } ],
+  &quot;createdAt&quot; : 1343052029205,
+  &quot;createdBy&quot; : &quot;Admin&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;displayName&quot; : &quot;Sandbox Silver&quot;,
+  &quot;lastModifiedAt&quot; : 1343052029205,
+  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
+  &quot;name&quot; : &quot;sandbox&quot;,
+  &quot;scopes&quot; : [ ]
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_219">
+<td>apiResources: </td>
+<td>A list of URIs (including wildcards) that represent the bundle of APIs permitted to consumers of this API Product	</td>
+<td><a href="../../response_elements/219/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/86?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_220">
+<td>approvalType: </td>
+<td>Determines the state of the consumer key generated for requesters of this API Product. For Auto, key are generated in &quot;Approved' state. For Manual, keys are approved in 'Pending' state.</td>
+<td><a href="../../response_elements/220/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/86?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_221">
+<td>attributes: </td>
+<td>Any app-specific arbitrary attributes that may be used to define visibility of the API Product or runtime policy enforcement (such as setting for a rate-limiting policy.	</td>
+<td><a href="../../response_elements/221/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/86?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_222">
+<td>createdAt: </td>
+<td>Unix time when the API Product was created</td>
+<td><a href="../../response_elements/222/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/86?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_223">
+<td>createdBy: </td>
+<td>Apigee user account name of the individual who submitted the POST request that created this entity	</td>
+<td><a href="../../response_elements/223/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/86?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_224">
+<td>description: </td>
+<td>Human-readable description of the API Product</td>
+<td><a href="../../response_elements/224/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/86?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_225">
+<td>displayName: </td>
+<td>Friendly name to display to Developers, for example, in a Developer Onboarding app</td>
+<td><a href="../../response_elements/225/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/86?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_226">
+<td>lastModifiedAt: </td>
+<td>Unix time when the API Product was most recently updated</td>
+<td><a href="../../response_elements/226/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/86?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_227">
+<td>lastModifiedBy: </td>
+<td>Apigee user account name of the individual who last modified the API Product</td>
+<td><a href="../../response_elements/227/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/86?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_228">
+<td>name: </td>
+<td>The name of the API Product</td>
+<td><a href="../../response_elements/228/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/86?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_229">
+<td>scopes: </td>
+<td>Oauth scopes required in the Access Token(s) used to consime any of the API Reqsources (URIs) bundled in this API Product</td>
+<td><a href="../../response_elements/229/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/86?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  
+Failure 4xx with proper error message
+{
+   &quot;Error&quot;:{
+      &quot;Code&quot;:&quot;keymanagement.service.apiproduct_invalid_name&quot;,
+      &quot;Message&quot;:&quot;ApiProduct Name is invalid&quot;,
+      &quot;Contexts&quot;:&quot;&quot;
+   }
+}
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

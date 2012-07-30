@@ -1,0 +1,149 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Get Statistics for top Developers :: /environments/{environmentName}/stats/devs</h1> 
+</p>
+
+<!-- <a href="/api_methods/75/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Analytics
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+GET
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Use the GET method to retrieve the metrics for developers in a specific organization and environment
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/myorg/environments/test/stats/devs?select=message_count,user_count&amp;timeRange=7%2F1%2F2012%2000%3A00~8%2F1%2F2012%2000%3A00&amp;timeUnit=hour&amp;sortby=message_count&amp;sort=DESC&amp;topk=2
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+    &quot;environments&quot;: [
+       {
+           &quot;dimensions&quot;: [
+               {
+                   &quot;metrics&quot;: [
+                       {
+                           &quot;name&quot;: &quot;message_count&quot;,
+                           &quot;values&quot;: [
+                               {
+                                   &quot;timestamp&quot;: 1335241800000,
+                                   &quot;value&quot;: &quot;1.0&quot;
+                               }
+                           ]
+                       }
+                   ],
+                   &quot;name&quot;: &quot;dev1&quot;
+               },
+               {
+                   &quot;metrics&quot;: [
+                       {
+                           &quot;name&quot;: &quot;message_count&quot;,
+                           &quot;values&quot;: [
+                               {
+                                   &quot;timestamp&quot;: 1335241800000,
+                                   &quot;value&quot;: &quot;1.0&quot;
+                               }
+                           ]
+                       }
+                   ],
+                   &quot;name&quot;: &quot;dev2&quot;
+               }
+           ],
+           &quot;name&quot;: &quot;test&quot;
+       }
+    ],
+    &quot;metaData&quot;: {}
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

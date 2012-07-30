@@ -1,0 +1,171 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Add a Company Developer :: /companies/{companyName}/developers</h1> 
+</p>
+
+<!-- <a href="/api_methods/122/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Company Developers
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+POST
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Adds a Developer to a Company
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{organizationname}/companies/{companyname}/developers
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  {
+ &quot;developer&quot; : [ {
+   &quot;email&quot; : &quot;dev1@apigee.com&quot;,
+   &quot;role&quot; : &quot;developer&quot;
+ }, {
+   &quot;email&quot; : &quot;developer@apigee.com&quot;,
+   &quot;role&quot; : &quot;developer&quot;
+ } ]
+}
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+
+<tr>
+<div class="request_element" id="request_element_17">
+<td>email</td>
+<td>The unique ID for a Company Developer</td>
+<td></td>
+<td>Yes</td>
+<td><a href="../../request_elements/17/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_18">
+<td>role</td>
+<td>An entry that may be used for acces control to App information by a client, but which is not enforced by Apigee</td>
+<td></td>
+<td>Yes</td>
+<td><a href="../../request_elements/18/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;developer&quot; : [ {
+    &quot;email&quot; : &quot;dev1@apigee.com&quot;,
+    &quot;role&quot; : &quot;developer&quot;
+  }, {
+    &quot;email&quot; : &quot;developer@apigee.com&quot;,
+    &quot;role&quot; : &quot;developer&quot;
+  } ]
+}
+
+
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_122">
+<td>email: </td>
+<td>The unique key ID a Company Developer</td>
+<td><a href="../../response_elements/122/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/122?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_123">
+<td>rile: </td>
+<td>An entry that may be used for acces control to App information by a client, but which is not enforced by Apigee</td>
+<td><a href="../../response_elements/123/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/122?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  Failure 4xx with proper error message
+{
+  &quot;code&quot; : &quot;developer.service.DevelopersDoesNotExist&quot;,
+  &quot;message&quot; : &quot;Developers [dev2@apigee.com] doesnot exist&quot;,
+  &quot;contexts&quot; : [ ]
+}
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

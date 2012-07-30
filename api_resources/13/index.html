@@ -1,0 +1,135 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            
+<div class="page-header">
+  <h1>Company Developers</h1>
+</div>
+
+<table>
+	<tbody>
+		<tr>
+  <td class="lead">/companies/{companyName}/developers/</td>
+
+ <tr>
+	
+  <td>Developers grouped into a Company entity</td></tr>
+  <td>A company developer is a developer within an organization who is associated with a company. The company developer creates apps on behalf of the company, and any apps created by a company developer are associated with the company and known as company apps.
+
+The Company Developer API enables you to add developers to companies. A developer must exist in the system before you can associate them with a company. You associate a developer with a company by adding the developer’s email and assigning the developer a role.
+
+Company developer roles are enforced within the client application that you build using the API, not within the Apigee system. Thus, when you retrieve a list of company apps on behalf of a developer, it is your code that checks the developer’s role and displays the capabilities appropriate to that role. You typically create an admin role to allow a company developer to add other developers, delete company apps, and so on.
+
+Company developers are mapped to developers in your organization using the developer email as a key. The mapping associates the developer with the company and adds a role. The company developer entity thus has simply an email address and a role while the organization developer entity that it maps to can have a wide variety of attributes defined.</td></tr>
+
+</tr>
+</tbody>
+</table>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Add a Company Developer
+	       <a href="../../api_methods/122/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/122/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/122" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/companies/{companyName}/developers</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">POST</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Adds a Developer to a Company</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Remove a Developer from a Company
+	       <a href="../../api_methods/123/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/123/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/123" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/companies/{companyname}/developers/{developerEmail}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">DELETE</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Removes the association of a Developer with a Company</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		List Developers in a Company
+	       <a href="../../api_methods/124/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/124/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/124" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/companies/{companyname}/developers/</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Lists all Developers associated with a Company</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+</tbody>
+</table>
+
+
+Schema:
+
+<div id="well"><pre></pre></div>
+
+<div class="form-actions">
+  <a href="../index.html" class="btn"><span class="translation_missing" title="translation missing: en.helpers.links.back">Back</span></a>
+  <a href="edit/index.html" class="btn"><span class="translation_missing" title="translation missing: en.helpers.links.edit">Edit</span></a>
+
+</div>
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

@@ -1,0 +1,259 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Create Company App :: /companies/{companyName}/apps</h1> 
+</p>
+
+<!-- <a href="/api_methods/64/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Company Apps
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+POST
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Create App for a Company
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{organizationname}/companies/{companyname}/apps
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;access_type&quot; : &quot;read&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;Language&quot;,
+    &quot;value&quot; : &quot;java&quot;
+  } ],
+  &quot;apiProducts&quot;: [ &quot;sandbox&quot;],
+  &quot;callback_url&quot; : &quot;www.apigee.com&quot;,
+  &quot;name&quot; : &quot;sandboxTestApp&quot;
+}
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+
+<tr>
+<div class="request_element" id="request_element_25">
+<td>access_type</td>
+<td></td>
+<td></td>
+<td>No</td>
+<td><a href="../../request_elements/25/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_26">
+<td>attributes</td>
+<td></td>
+<td></td>
+<td>No</td>
+<td><a href="../../request_elements/26/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_27">
+<td>apiProducts</td>
+<td></td>
+<td></td>
+<td>No</td>
+<td><a href="../../request_elements/27/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_28">
+<td>callback_url</td>
+<td></td>
+<td></td>
+<td>No</td>
+<td><a href="../../request_elements/28/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_29">
+<td>name</td>
+<td></td>
+<td></td>
+<td>Yes</td>
+<td><a href="../../request_elements/29/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;Language&quot;,
+    &quot;value&quot; : &quot;java&quot;
+  } ],
+  &quot;createdAt&quot; : 1343389000141,
+  &quot;createdBy&quot; : &quot;andrew@apigee.com&quot;,
+  &quot;credentials&quot; : [ {
+    &quot;apiProducts&quot; : [ {
+      &quot;apiproduct&quot; : &quot;sandbox&quot;,
+      &quot;status&quot; : &quot;approved&quot;
+    } ],
+    &quot;attributes&quot; : [ ],
+    &quot;consumerKey&quot; : &quot;KaAQpovGCRvu5btnAIQB6qilop7Vsgwe&quot;,
+    &quot;consumerSecret&quot; : &quot;6GDmEgl5yxacEgtd&quot;,
+    &quot;status&quot; : &quot;approved&quot;
+  } ],
+  &quot;lastModifiedAt&quot; : 1343389000141,
+  &quot;lastModifiedBy&quot; : &quot;andrew@apigee.com&quot;,
+  &quot;name&quot; : &quot;sandboxApp&quot;,
+  &quot;status&quot; : &quot;approved&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_147">
+<td>access_type: </td>
+<td></td>
+<td><a href="../../response_elements/147/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/64?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_148">
+<td>attributes: </td>
+<td></td>
+<td><a href="../../response_elements/148/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/64?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_149">
+<td>callback_url: </td>
+<td></td>
+<td><a href="../../response_elements/149/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/64?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_150">
+<td>created_at: </td>
+<td></td>
+<td><a href="../../response_elements/150/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/64?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_151">
+<td>created_by: </td>
+<td></td>
+<td><a href="../../response_elements/151/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/64?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_152">
+<td>lastmodified_by: </td>
+<td></td>
+<td><a href="../../response_elements/152/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/64?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_153">
+<td>name: </td>
+<td></td>
+<td><a href="../../response_elements/153/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/64?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_154">
+<td>status: </td>
+<td></td>
+<td><a href="../../response_elements/154/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/64?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+    &quot;code&quot; : &quot;keymanagement.service.app_invalid_name&quot;,
+  &quot;message&quot; : &quot;Invalid App Name&quot;,
+  &quot;contexts&quot; : [ ]
+}
+
+{
+  &quot;code&quot; : &quot;keymanagement.service.apiproducts_invalid&quot;,
+  &quot;message&quot; : &quot;One or more ApiProduct is invalid&quot;,
+  &quot;contexts&quot; : [ ]
+}
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

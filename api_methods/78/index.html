@@ -1,0 +1,168 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Get Custom Report :: /environments/{environmentName}/stats/{customVariable}</h1> 
+</p>
+
+<!-- <a href="/api_methods/78/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Analytics
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+GET
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  A report in Analytics is made up of dimensions, measures and filters.
+
+Dimensions lets you view data from various perspectives. For example, the time dimension show you the breakdown of calls for the last month, day or hour. Throughput dimension help you see, which APIs are the most active. Error rate dimension help you pinpoint the APIs that are causing issues with your servers. Average end point response time dimension help you see how your server infrastructure is performing.
+Measures are numeric representations of a set of facts that have occurred. Examples of measures include APIs, apps, API Products and developers and so forth. By combining different dimensions and measures you can generate reports that show you the exact data you want to see.
+Filters let you get a subset of results. For example throughput aggregated by APIs, where APIname falls within a range of names. A filter is expressed as a query param in the APIs and is categorized as either:
+Simple expressions
+Group expressions
+Connectors
+
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Enables the generation of a custom report that incorporates dimensions, measures, and filters.
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/environments/prod/stats/category?select=sum(price)&amp;timeRange=1%2F1%2F2012%2000%3A00~2%2F10%2F2012%2000%3A00&amp;timeUnit=minute&amp;sortby=sum(price)&amp;sort=DESC' 
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+   &quot;environments&quot; : [ {
+    &quot;dimensions&quot; : [ {
+       &quot;metrics&quot; : [
+                {
+               &quot;name&quot; : &quot;message_count&quot;,
+               &quot;values&quot; : [ {
+                    &quot;timestamp&quot; : 1335241800000,
+                    &quot;value&quot; : &quot;1.0&quot;
+                } ]
+           } ,
+                {
+                &quot;name&quot; : &quot;error_count&quot;,
+                &quot;values&quot; : [ {
+                     &quot;timestamp&quot; : 1335241800000,
+                     &quot;value&quot; : &quot;0.0&quot;
+                  } ]
+         }
+             ],
+    
+              &quot;name&quot; : &quot;api1&quot;
+    },
+           {
+       &quot;metrics&quot; : [
+              {
+             &quot;name&quot; : &quot;message_count&quot;,
+             &quot;values&quot; : [ {
+                      &quot;timestamp&quot; : 1335241800000,
+                      &quot;value&quot; : &quot;1.0&quot;
+                 } ]
+          },
+               {
+               &quot;name&quot; : &quot;error_count&quot;,
+               &quot;values&quot; : [ {
+                       &quot;timestamp&quot; : 1335241800000,
+                       &quot;value&quot; : &quot;0.0&quot;
+               } ]
+         }
+            ],
+    
+            &quot;name&quot; : &quot;api2&quot;
+    }
+         ],
+       
+        &quot;name&quot; : &quot;test&quot;
+     }
+   ],
+  &quot;metaData&quot; : {
+   }
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

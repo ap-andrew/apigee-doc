@@ -1,0 +1,246 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Update API Product :: /apiproducts/{apiproductName}</h1> 
+</p>
+
+<!-- <a href="/api_methods/12/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  API Products
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+PUT
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  Call PUT on an existing API Product to update the API Product. You are only required to include the elements to be updated in the update request. 
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Updates an existing APi Product
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u {myname:mypass} &quot;https://api.enterprise.apigee.com/v1/o/{myorg}/apiproducts&quot; 
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+       {
+  &quot;approvalType&quot; : &quot;auto&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;RateLimit&quot;,
+    &quot;value&quot; : &quot;200&quot;
+  }, {
+    &quot;name&quot; : &quot;Threshold&quot;,
+    &quot;value&quot; : &quot;25&quot;
+  } ],
+  &quot;displayName&quot; : &quot;Sandbox Silver1&quot;,
+   &quot;apiResources&quot; : [ &quot;/v1/**&quot;, &quot;/v3/receiveSMS&quot;, &quot;/v2/*/send&quot; ]
+}
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+
+<tr>
+<div class="request_element" id="request_element_42">
+<td>approvalType</td>
+<td>Manual or Auto. If Manual, consumer key is generated and returned in 'pending' state. If manual consumer key generated and returned in 'Approved' state.</td>
+<td>N/A</td>
+<td>No</td>
+<td><a href="../../request_elements/42/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_43">
+<td>attributes</td>
+<td>Arbitrary name/value pairs, most commonly used to store variables that define Rate Limit (Quota or Spike Arrest) settings for an API Product (otherwise known as a Service Plan)</td>
+<td>N/A</td>
+<td>No</td>
+<td><a href="../../request_elements/43/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_44">
+<td>displayName</td>
+<td>The display name of the API Product, used in Apps that display the API Product to Developers</td>
+<td>N/A</td>
+<td>No</td>
+<td><a href="../../request_elements/44/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_45">
+<td>apiResources</td>
+<td>A comma separated list of API resources to be bundled in the API Product.</td>
+<td>N/A</td>
+<td>No</td>
+<td><a href="../../request_elements/45/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;apiResources&quot; : [ &quot;/v1/**&quot;, &quot;/v3/receiveSMS&quot;, &quot;/v2/*/send&quot; ],
+  &quot;approvalType&quot; : &quot;auto&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;RateLimit&quot;,
+    &quot;value&quot; : &quot;200&quot;
+  }, {
+    &quot;name&quot; : &quot;Threshold&quot;,
+    &quot;value&quot; : &quot;25&quot;
+  } ],
+  &quot;createdAt&quot; : 1343052029205,
+  &quot;createdBy&quot; : &quot;Admin&quot;,
+  &quot;displayName&quot; : &quot;Sandbox Silver1&quot;,
+  &quot;lastModifiedAt&quot; : 1343052029692,
+  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
+  &quot;name&quot; : &quot;sandbox&quot;,
+  &quot;scopes&quot; : [ ]
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_138">
+<td>apiResources: </td>
+<td>A list of URIs (including wildcards) that represent the bundle of APIs permitted to consumers of this API Product</td>
+<td><a href="../../response_elements/138/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/12?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_139">
+<td>approvalType: </td>
+<td>Determines the state of the consumer key generated for requesters of this API Product. For Auto, key are generated in &quot;Approved' state. For Manual, keys are approved in 'Pending' state. </td>
+<td><a href="../../response_elements/139/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/12?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_140">
+<td>attributes: </td>
+<td>Any app-specific arbitrary attributes that may be used to define visibility of the API Product or runtime policy enforcement (such as setting for a rate-limiting policy.</td>
+<td><a href="../../response_elements/140/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/12?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_141">
+<td>createdAt: </td>
+<td>Unix time</td>
+<td><a href="../../response_elements/141/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/12?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_142">
+<td>createdBy: </td>
+<td>Apigee user account name of the individual who submitted the POST request that created this entity</td>
+<td><a href="../../response_elements/142/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/12?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_143">
+<td>lastModifiedAt: </td>
+<td>Unix time</td>
+<td><a href="../../response_elements/143/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/12?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_144">
+<td>lastModifiedBy: </td>
+<td>Apigee user account name of the individual who last modified this entity</td>
+<td><a href="../../response_elements/144/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/12?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_145">
+<td>name: </td>
+<td>Name of the API Product</td>
+<td><a href="../../response_elements/145/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/12?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_146">
+<td>scopes: </td>
+<td>Oauth scopes required in the Access Token(s) used to consime any of the API Reqsources (URIs) bundled in this API Product</td>
+<td><a href="../../response_elements/146/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/12?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;code&quot; : &quot;keymanagement.service.apiproduct_doesnot_exist&quot;,
+  &quot;message&quot; : &quot;ApiProduct with name sandbox1 does not exist&quot;,
+  &quot;contexts&quot; : [ ]
+}
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

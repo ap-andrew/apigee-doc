@@ -1,0 +1,131 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Create an API :: /apis</h1> 
+</p>
+
+<!-- <a href="/api_methods/15/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  APIs
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+POST
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Create an API definition and an API proxy configuration on Apigee Enterprise
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass -H &quot;Content-Type: application/json&quot; https://api.enterprise.apigee.com/v1/o/{myorg}/apis/ -d'
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  {&quot;name&quot; : &quot;weatherTest&quot;,   &quot;policies&quot; : [ ],   &quot;proxyEndpoints&quot; : [ &quot;proxy&quot; ],   &quot;resources&quot; : [ ],   &quot;targetEndpoints&quot; : [ &quot;static&quot; ],   &quot;targetServers&quot; : [ ],   &quot;type&quot; : &quot;Application&quot;}
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+    &quot;configurationVersion&quot;: {
+        &quot;majorVersion&quot;: 4, 
+        &quot;minorVersion&quot;: 0
+    }, 
+    &quot;contextInfo&quot;: &quot;Revision 1 of application weatherTest, in organization apigee-cs&quot;, 
+    &quot;createdAt&quot;: 1343182801400, 
+    &quot;createdBy&quot;: &quot;andrew@apigee.com&quot;, 
+    &quot;lastModifiedAt&quot;: 1343182801400, 
+    &quot;lastModifiedBy&quot;: &quot;andrew@apigee.com&quot;, 
+    &quot;name&quot;: &quot;weatherTest&quot;, 
+    &quot;policies&quot;: [], 
+    &quot;proxyEndpoints&quot;: [], 
+    &quot;resources&quot;: [], 
+    &quot;revision&quot;: &quot;1&quot;, 
+    &quot;targetEndpoints&quot;: [], 
+    &quot;targetServers&quot;: [], 
+    &quot;type&quot;: &quot;Application&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+- application/octet-stream
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

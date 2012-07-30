@@ -1,0 +1,153 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Update a Developer App :: /developers/{developerName}/apps/{appName}</h1> 
+</p>
+
+<!-- <a href="/api_methods/30/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Developer Apps
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+PUT
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  When a developer wants to register an app to consume your API product, you create a developer app in your organization within Apigee Enterprise. The developer creates and registers an app using an API product of an organization and gets the consumer key in the response. Use the POST method to create developer app.
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Updates the app to get a new set of consumer credentials. 
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u {myname:mypass} &quot;https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerName}/apps/{appName}&quot; -X POST -d' 
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;access_type&quot; : &quot;write&quot;,
+  &quot;attributes&quot; : [ {
+	&quot;name&quot; : &quot;Language&quot;,
+	&quot;value&quot; : &quot;C&quot;
+  } ],
+  &quot;apiProducts&quot;: [ &quot;TestApiProduct&quot;],
+  &quot;callback_url&quot; : &quot;www.apigee.com&quot;,
+  &quot;name&quot; : &quot;MyTestApp&quot;
+}
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;accessType&quot; : &quot;write&quot;,
+  &quot;attributes&quot; : [ {
+	&quot;name&quot; : &quot;Language&quot;,
+	&quot;value&quot; : &quot;C&quot;
+  } ],
+  &quot;callbackUrl&quot; : &quot;www.apigee.com&quot;,
+  &quot;createdAt&quot; : 1343052353553,
+  &quot;createdBy&quot; : &quot;Admin&quot;,
+  &quot;credentials&quot; : [ {
+	&quot;apiProducts&quot; : [ {
+  	&quot;apiproduct&quot; : &quot;TestApiProduct&quot;,
+  	&quot;status&quot; : &quot;pending&quot;
+	} ],
+	&quot;attributes&quot; : [ ],
+	&quot;consumerKey&quot; : &quot;pCmh8dfwcDF1m9IIIqbUY2hGDO3obYgU&quot;,
+	&quot;consumerSecret&quot; : &quot;HRlGbgdHLEwvzBhQ&quot;,
+	&quot;status&quot; : &quot;approved&quot;
+  }, {
+	&quot;apiProducts&quot; : [ {
+  	&quot;apiproduct&quot; : &quot;TestApiProduct&quot;,
+  	&quot;status&quot; : &quot;pending&quot;
+	} ],
+	&quot;attributes&quot; : [ ],
+	&quot;consumerKey&quot; : &quot;VBsAd4wO0wkevxGaqlKlVF8qlGa4ydsT&quot;,
+	&quot;consumerSecret&quot; : &quot;gi8yb1ZFZ7ztRhYa&quot;,
+	&quot;status&quot; : &quot;approved&quot;
+  } ],
+  &quot;lastModifiedAt&quot; : 1343052354468,
+  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
+  &quot;name&quot; : &quot;MyTestApp&quot;,
+  &quot;status&quot; : &quot;approved&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

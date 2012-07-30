@@ -1,0 +1,137 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Delete Oauth 1.0 Verifier :: /oauth/1/verifiers/{verifiercode}</h1> 
+</p>
+
+<!-- <a href="/api_methods/151/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Oauth 1.0a Verifiers
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+DELETE
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  Deletes the specified verifier code, which is the verifier code given by the provider
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Deletes the issued verifier code
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{org}/oauth/1/verifiers/{verifiercode}
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;appUserId&quot; : &quot;Developer@apigee.com&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;north&quot;
+  } ],
+  &quot;code&quot; : &quot;1234&quot;,
+  &quot;createdAt&quot; : 1343035589955,
+  &quot;createdBy&quot; : &quot;Admin&quot;,
+  &quot;expiresAt&quot; : 1343037389955,
+  &quot;issuedAt&quot; : 1343035589955,
+  &quot;lastModifiedAt&quot; : 1343035589955,
+  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
+  &quot;requestToken&quot; : &quot;wsxHGWZBwruGfkDGrPNWM2HNVddd&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  Failure 404 with proper error message
+{
+  &quot;code&quot; : &quot;keymanagement.service.....&quot;,
+  &quot;message&quot; : &quot;Verifier doesnot exist&quot;,
+  &quot;contexts&quot; : [ ]
+}
+
+
+Error Codes:
+1. keymanagement.service.oauth10_verifier_doesnot_exist
+2. keymanagement.service.oauth10_verifier_deletion_failed
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+- application/json
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

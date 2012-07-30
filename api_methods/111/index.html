@@ -1,0 +1,283 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Update Access Token :: /oauth2/accesstokens/{accessToken}</h1> 
+</p>
+
+<!-- <a href="/api_methods/111/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Oauth 2.0 Access Tokens
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+PUT
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  Updates the access token attributes.
+1. Can update attributes of Authorization Code and AccessToken
+2. Only attributes given in payload will be updated and the remaining existing attributes will remain intact.
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Updates the access token attributes.
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/oauth2/accesstokens/{accessToken}
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;attributes&quot; : [ {
+	&quot;name&quot; : &quot;att_n1&quot;,
+	&quot;value&quot; : &quot;att_v1&quot;
+  } ],
+  &quot;scope&quot; : &quot;read&quot;
+}
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+
+<tr>
+<div class="request_element" id="request_element_7">
+<td>attributes</td>
+<td>Name-value pair formatted metadata related to an Access Token</td>
+<td></td>
+<td>No</td>
+<td><a href="../../request_elements/7/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_8">
+<td>scope</td>
+<td>A set of permissions defined for an API, used in the Oauth protocol</td>
+<td></td>
+<td>Yes</td>
+<td><a href="../../request_elements/8/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;apiProducts&quot; : [ &quot;sandbox&quot; ],
+  &quot;app&quot; : &quot;app1&quot;,
+  &quot;attributes&quot; : [ {
+	&quot;name&quot; : &quot;att_n1&quot;,
+	&quot;value&quot; : &quot;att_v1&quot;
+  } ],
+  &quot;clientId&quot; : &quot;fGytmxA5UDajPMdOA5E3bebiBOBPikOT&quot;,
+  &quot;createdAt&quot; : 1343038476540,
+  &quot;createdBy&quot; : &quot;defaultUser&quot;,
+  &quot;expiresAt&quot; : 1343040276540,
+  &quot;grantType&quot; : &quot;password&quot;,
+  &quot;issuedAt&quot; : 1343038476540,
+  &quot;lastModifiedAt&quot; : 1343038476958,
+  &quot;lastModifiedBy&quot; : &quot;defaultUser&quot;,
+  &quot;refreshCount&quot; : 0,
+  &quot;refreshToken&quot; : &quot;1h11770Z&quot;,
+  &quot;scope&quot; : &quot;read&quot;,
+  &quot;status&quot; : &quot;approved&quot;,
+  &quot;token&quot; : &quot;taFM3LHUTQAFhL0dIFg81XhRc7vC&quot;,
+  &quot;tokenType&quot; : &quot;BearerToken&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_234">
+<td>apiProducts: </td>
+<td></td>
+<td><a href="../../response_elements/234/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_235">
+<td>app: </td>
+<td></td>
+<td><a href="../../response_elements/235/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_236">
+<td>attributes: </td>
+<td></td>
+<td><a href="../../response_elements/236/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_237">
+<td>clientId: </td>
+<td></td>
+<td><a href="../../response_elements/237/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_238">
+<td>createdAt: </td>
+<td></td>
+<td><a href="../../response_elements/238/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_239">
+<td>createdBy: </td>
+<td></td>
+<td><a href="../../response_elements/239/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_240">
+<td>expiresAt: </td>
+<td></td>
+<td><a href="../../response_elements/240/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_241">
+<td>grantType: </td>
+<td></td>
+<td><a href="../../response_elements/241/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_242">
+<td>issuedAt: </td>
+<td></td>
+<td><a href="../../response_elements/242/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_243">
+<td>lastModifiedAt: </td>
+<td></td>
+<td><a href="../../response_elements/243/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_244">
+<td>lastModifiedAt: </td>
+<td></td>
+<td><a href="../../response_elements/244/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_245">
+<td>lastModifiedBy: </td>
+<td></td>
+<td><a href="../../response_elements/245/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_246">
+<td>refreshCount: </td>
+<td></td>
+<td><a href="../../response_elements/246/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_247">
+<td>refreshToken: </td>
+<td></td>
+<td><a href="../../response_elements/247/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_248">
+<td>scope: </td>
+<td></td>
+<td><a href="../../response_elements/248/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_249">
+<td>status: </td>
+<td></td>
+<td><a href="../../response_elements/249/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_250">
+<td>token: </td>
+<td></td>
+<td><a href="../../response_elements/250/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_251">
+<td>tokenType: </td>
+<td></td>
+<td><a href="../../response_elements/251/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/111?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  Failure 404 with proper error message
+&lt;Error&gt;
+&lt;Code&gt;keymanagement.service.invalid_{entity}&lt;/Code&gt;
+&lt;Message&gt;Invalid Access Token&lt;/Message&gt;
+&lt;Contexts/&gt;
+&lt;/Error&gt;
+
+Error Codes:
+1. keymanagement.service.application_not_approved
+2. keymanagement.service.invalid_access_token
+3. keymanagement.service.access_token_update_failed
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

@@ -1,0 +1,135 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Get API Revision Deployments :: /apis/{apiproxyName}/revisions/{revisionNumber}/deployments</h1> 
+</p>
+
+<!-- <a href="/api_methods/19/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Deployments
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+GET
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Get Deployments for an API Revision
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{organizationName}/apis/{apiproxyName}/revisions/{revisionNumber}/deployments
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  &lt;APIProxyRevisionDeployment name=&quot;1&quot;&gt;
+     &lt;APIProxy&gt;myapp&lt;/APIProxy&gt;
+     &lt;Organization&gt;myorg&lt;/Organization&gt;
+     &lt;Environment xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:type=&quot;revisionStatusInEnvironment&quot; name=&quot;qa&quot;&gt;
+          &lt;BasePath&gt;/qa/&lt;/BasePath&gt;
+          &lt;Server xsi:type=&quot;serverDeploymentStatus&quot;&gt;
+               &lt;UUID&gt;c77ef6ba-ce6b-4ee7-94fb-dc580fd46c66&lt;/UUID&gt;
+               &lt;Success&gt;true&lt;/Success&gt;
+               &lt;Type&gt;router&lt;/Type&gt;
+          &lt;/Server&gt;
+          &lt;Server xsi:type=&quot;serverDeploymentStatus&quot;&gt;
+               &lt;UUID&gt;59b0d648-6e02-40ff-b75e-83fed8a6e5da&lt;/UUID&gt;
+               &lt;Success&gt;true&lt;/Success&gt;
+               &lt;Type&gt;message-processor&lt;/Type&gt;
+          &lt;/Server&gt;
+          &lt;State&gt;deployed&lt;/State&gt;
+     &lt;/Environment&gt;
+&lt;/APIProxyRevisionDeployment&gt;
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  Failure 4xx with proper error message
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;Error&gt;
+     &lt;Code&gt;messaging.config.beans.ApplicationRevisionDoesNotExist&lt;/Code&gt;
+     &lt;Message&gt;APIProxy revision 2 does not exist&lt;/Message&gt;
+     &lt;Contexts/&gt;
+&lt;/Error&gt;
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

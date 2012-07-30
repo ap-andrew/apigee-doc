@@ -1,0 +1,195 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Get an Oauth 1.0 Verifier :: /oauth/1/verifiers/{verifiercode}</h1> 
+</p>
+
+<!-- <a href="/api_methods/149/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Oauth 1.0a Verifiers
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+GET
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Gets the detail of given verifier code
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{org}/oauth/1/verifiers/{verifiercode}
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;appUserId&quot; : &quot;Developer@apigee.com&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;north&quot;
+  } ],
+  &quot;code&quot; : &quot;1234&quot;,
+  &quot;createdAt&quot; : 1343035589955,
+  &quot;createdBy&quot; : &quot;Admin&quot;,
+  &quot;expiresAt&quot; : 1343037389955,
+  &quot;issuedAt&quot; : 1343035589955,
+  &quot;lastModifiedAt&quot; : 1343035589955,
+  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
+  &quot;requestToken&quot; : &quot;wsxHGWZBwruGfkDGrPNWM2HNVddd&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_252">
+<td>appUserId: </td>
+<td>Resource owner's user ID</td>
+<td><a href="../../response_elements/252/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/149?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_253">
+<td>attributes: </td>
+<td>Name/value attributes for the verifier</td>
+<td><a href="../../response_elements/253/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/149?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_254">
+<td>code: </td>
+<td>The verifier code provided by the resource owner</td>
+<td><a href="../../response_elements/254/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/149?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_255">
+<td>createdAt: </td>
+<td>UNIX time the app was created</td>
+<td><a href="../../response_elements/255/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/149?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_256">
+<td>createdBy: </td>
+<td>Apigee user account name of the individual who submitted the POST request that created this entity</td>
+<td><a href="../../response_elements/256/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/149?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_257">
+<td>expiresAt: </td>
+<td>Expiry time period of the token to be generated; token expires/is deleted when the expiry time ends</td>
+<td><a href="../../response_elements/257/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/149?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_258">
+<td>issuedAt: </td>
+<td>UNIX time the verifier code is issued </td>
+<td><a href="../../response_elements/258/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/149?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_259">
+<td>lastModifiedAt: </td>
+<td>UNIX time the app was last modified</td>
+<td><a href="../../response_elements/259/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/149?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_260">
+<td>lastModifiedBy: </td>
+<td>Apigee user account name of the individual who submitted the request that most recently modified this entity</td>
+<td><a href="../../response_elements/260/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/149?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_261">
+<td>requestToken: </td>
+<td>Request token associated with the verifier</td>
+<td><a href="../../response_elements/261/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/149?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;code&quot; : &quot;keymanagement.service.......&quot;,
+  &quot;message&quot; : &quot;Verifier doesnot exist&quot;,
+  &quot;contexts&quot; : [ ]
+}
+
+Error Codes:
+1. keymanagement.service.oauth10_verifier_doesnot_exist
+3. keymanagement.service.application_not_approved
+4. keymanagement.service.oauth10_verifier_fetch_failed
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

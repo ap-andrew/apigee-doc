@@ -1,0 +1,332 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            
+<div class="page-header">
+  <h1>APIs</h1>
+</div>
+
+<table>
+	<tbody>
+		<tr>
+  <td class="lead">/apis</td>
+
+ <tr>
+	
+  <td>Enables developers to create and manage APIs in Apigee Enterprise</td></tr>
+  <td>In Apigee Enterprise, your API is made up of a base URL and a number of resources. Resources are the assets offered by your API. For example, if your base URL is example.com/v1/, your resources could be something like examples.com/v1/blogs. When you add an API, you're creating a new API that acts as a proxy for an existing API. So instead of calling your existing API, your developers would call the new Apigee API.</td></tr>
+
+</tr>
+</tbody>
+</table>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		List APIs
+	       <a href="../../api_methods/1/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/1/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/1" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/apis</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Gets all APIs in an Organization</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Update an API
+	       <a href="../../api_methods/2/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/2/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/2" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/apis/{apiName}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">POST</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Use the POST method to update a specific API proxy in an organization</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Delete an API
+	       <a href="../../api_methods/3/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/3/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/3" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/apis/{apiname}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">DELETE</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td></td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Create an API
+	       <a href="../../api_methods/15/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/15/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/15" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/apis</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">POST</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Create an API definition and an API proxy configuration on Apigee Enterprise</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Import an API
+	       <a href="../../api_methods/24/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/24/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/24" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/apis?action=import&amp;name={apiName}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">POST</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Upload an API proxy from a local machine to Apigee</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Deploy an API to an Environment
+	       <a href="../../api_methods/25/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/25/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/25" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/apis/{apiName}/revisions/{revision}/deployments?action=deploy&amp;env={envName}&amp;basepath={/basepath}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Pushes an API to an environment (typically 'test' or 'prod')for execution</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Undeploy an API from an Environment
+	       <a href="../../api_methods/26/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/26/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/26" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/apis/{apiName}/deployments?action=undeploy&amp;env={envName}&amp;revision={revision}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Removes an API from an environment (typically 'test' or 'prod')</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Delete an API Revision
+	       <a href="../../api_methods/27/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/27/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/27" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/apis/{apiName}/revision/{revisionNumber}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">DELETE</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Deletes a specific revision of an API</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Get an API
+	       <a href="../../api_methods/104/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/104/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/104" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/apis/{apiName}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Gets an API, providing a pointer to existing revisions of the API.</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Export an API
+	       <a href="../../api_methods/105/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/105/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/105" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/apis/{apiName}?format=bundle</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Exports an API from Apigee to the local machine a ZIP bundle of config and code files.</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+</tbody>
+</table>
+
+
+Schema:
+
+<div id="well"><pre></pre></div>
+
+<div class="form-actions">
+  <a href="../index.html" class="btn"><span class="translation_missing" title="translation missing: en.helpers.links.back">Back</span></a>
+  <a href="edit/index.html" class="btn"><span class="translation_missing" title="translation missing: en.helpers.links.edit">Edit</span></a>
+
+</div>
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

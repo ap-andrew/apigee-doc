@@ -1,0 +1,271 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Get Deployments for an Organization :: /deployments</h1> 
+</p>
+
+<!-- <a href="/api_methods/112/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Deployments
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+GET
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  Gets all API deployments across an organization, for all APIs in all environments. 
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Returns all deployments for all APIs in an Organization
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/o/{myorg}/deployments
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;environment&quot; : [ {
+    &quot;aPIProxy&quot; : [ {
+      &quot;name&quot; : &quot;api1&quot;,
+      &quot;revision&quot; : [ {
+        &quot;configuration&quot; : {
+          &quot;basePath&quot; : &quot;/&quot;,
+          &quot;steps&quot; : [ ]
+        },
+        &quot;name&quot; : &quot;1&quot;,
+        &quot;server&quot; : [ {
+          &quot;status&quot; : &quot;deployed&quot;,
+          &quot;type&quot; : [ &quot;message-processor&quot; ],
+          &quot;uUID&quot; : &quot;90096dd1-1019-406b-9f42-fbb80cd01200&quot;
+        }, {
+          &quot;status&quot; : &quot;deployed&quot;,
+          &quot;type&quot; : [ &quot;message-processor&quot; ],
+          &quot;uUID&quot; : &quot;7d6e2eb1-581a-4db0-8045-20d9c3306549&quot;
+        }, {
+          &quot;status&quot; : &quot;deployed&quot;,
+          &quot;type&quot; : [ &quot;router&quot; ],
+          &quot;uUID&quot; : &quot;1619e2d7-c822-45e0-9f97-63882fb6a805&quot;
+        }, {
+          &quot;status&quot; : &quot;deployed&quot;,
+          &quot;type&quot; : [ &quot;router&quot; ],
+          &quot;uUID&quot; : &quot;8a5f3d5f-46f8-4e99-b4cc-955875c8a8c8&quot;
+        } ],
+        &quot;state&quot; : &quot;deployed&quot;
+      } ]
+    }, {
+      &quot;name&quot; : &quot;api2&quot;,
+      &quot;revision&quot; : [ {
+        &quot;configuration&quot; : {
+          &quot;basePath&quot; : &quot;&quot;,
+          &quot;steps&quot; : [ ]
+        },
+        &quot;name&quot; : &quot;1&quot;,
+        &quot;server&quot; : [ {
+          &quot;status&quot; : &quot;deployed&quot;,
+          &quot;type&quot; : [ &quot;message-processor&quot; ],
+          &quot;uUID&quot; : &quot;90096dd1-1019-406b-9f42-fbb80cd01200&quot;
+        }, {
+          &quot;status&quot; : &quot;deployed&quot;,
+          &quot;type&quot; : [ &quot;message-processor&quot; ],
+          &quot;uUID&quot; : &quot;7d6e2eb1-581a-4db0-8045-20d9c3306549&quot;
+        }, {
+          &quot;status&quot; : &quot;deployed&quot;,
+          &quot;type&quot; : [ &quot;router&quot; ],
+          &quot;uUID&quot; : &quot;1619e2d7-c822-45e0-9f97-63882fb6a805&quot;
+        }, {
+          &quot;status&quot; : &quot;deployed&quot;,
+          &quot;type&quot; : [ &quot;router&quot; ],
+          &quot;uUID&quot; : &quot;8a5f3d5f-46f8-4e99-b4cc-955875c8a8c8&quot;
+        } ],
+        &quot;state&quot; : &quot;deployed&quot;
+      } ]
+    }
+    &quot;name&quot; : &quot;test&quot;
+  }, {
+    &quot;aPIProxy&quot; : [ {
+      &quot;name&quot; : &quot;api3&quot;,
+      &quot;revision&quot; : [ {
+        &quot;configuration&quot; : {
+          &quot;basePath&quot; : &quot;/&quot;,
+          &quot;steps&quot; : [ ]
+        },
+        &quot;name&quot; : &quot;41&quot;,
+        &quot;server&quot; : [ {
+          &quot;status&quot; : &quot;deployed&quot;,
+          &quot;type&quot; : [ &quot;message-processor&quot; ],
+          &quot;uUID&quot; : &quot;90096dd1-1019-406b-9f42-fbb80cd01200&quot;
+        }, {
+          &quot;status&quot; : &quot;deployed&quot;,
+          &quot;type&quot; : [ &quot;message-processor&quot; ],
+          &quot;uUID&quot; : &quot;7d6e2eb1-581a-4db0-8045-20d9c3306549&quot;
+        }, {
+          &quot;status&quot; : &quot;deployed&quot;,
+          &quot;type&quot; : [ &quot;router&quot; ],
+          &quot;uUID&quot; : &quot;1619e2d7-c822-45e0-9f97-63882fb6a805&quot;
+        }, {
+          &quot;status&quot; : &quot;deployed&quot;,
+          &quot;type&quot; : [ &quot;router&quot; ],
+          &quot;uUID&quot; : &quot;8a5f3d5f-46f8-4e99-b4cc-955875c8a8c8&quot;
+        } ],
+        &quot;state&quot; : &quot;deployed&quot;
+      } ]
+    }, {
+      &quot;name&quot; : &quot;api4&quot;,
+      &quot;revision&quot; : [ {
+        &quot;configuration&quot; : {
+          &quot;basePath&quot; : &quot;/&quot;,
+          &quot;steps&quot; : [ ]
+        },
+        &quot;name&quot; : &quot;1&quot;,
+        &quot;server&quot; : [ {
+          &quot;status&quot; : &quot;deployed&quot;,
+          &quot;type&quot; : [ &quot;message-processor&quot; ],
+          &quot;uUID&quot; : &quot;90096dd1-1019-406b-9f42-fbb80cd01200&quot;
+        }, {
+          &quot;status&quot; : &quot;deployed&quot;,
+          &quot;type&quot; : [ &quot;message-processor&quot; ],
+          &quot;uUID&quot; : &quot;7d6e2eb1-581a-4db0-8045-20d9c3306549&quot;
+        }, {
+          &quot;status&quot; : &quot;deployed&quot;,
+          &quot;type&quot; : [ &quot;router&quot; ],
+          &quot;uUID&quot; : &quot;1619e2d7-c822-45e0-9f97-63882fb6a805&quot;
+        }, {
+          &quot;status&quot; : &quot;deployed&quot;,
+          &quot;type&quot; : [ &quot;router&quot; ],
+          &quot;uUID&quot; : &quot;8a5f3d5f-46f8-4e99-b4cc-955875c8a8c8&quot;
+        } ],
+        &quot;state&quot; : &quot;deployed&quot;
+      } ]
+    } ],
+    &quot;name&quot; : &quot;prod&quot;
+  } ],
+  &quot;name&quot; : &quot;myorg&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_131">
+<td>aPIProxy: </td>
+<td></td>
+<td><a href="../../response_elements/131/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/112?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_132">
+<td>name: </td>
+<td></td>
+<td><a href="../../response_elements/132/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/112?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_133">
+<td>revision: </td>
+<td></td>
+<td><a href="../../response_elements/133/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/112?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_134">
+<td>configuration: </td>
+<td></td>
+<td><a href="../../response_elements/134/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/112?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_135">
+<td>basePath: </td>
+<td></td>
+<td><a href="../../response_elements/135/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/112?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_136">
+<td>steps: </td>
+<td></td>
+<td><a href="../../response_elements/136/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/112?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  Failure 4xx with proper error message
+{
+  &quot;code&quot; : &quot;organizations.OrganizationDoesNotExist&quot;,
+  &quot;message&quot; : &quot;Organization : AutomationOrganization1 does not exist&quot;,
+  &quot;contexts&quot; : [ ]
+}
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+- application/json
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

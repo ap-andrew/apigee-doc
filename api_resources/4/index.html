@@ -1,0 +1,337 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            
+<div class="page-header">
+  <h1>Developers</h1>
+</div>
+
+<table>
+	<tbody>
+		<tr>
+  <td class="lead">/developers</td>
+
+ <tr>
+	
+  <td>A Developer who is registered with your Organization to create Apps that consume your APIs</td></tr>
+  <td> Developers can register themselves through a developer portal when they want to access your APIs, but there are cases when you would add a developer via RESTful API. For example, your API could be for use by internal developers and you might not have a developer portal, or you may wish to programmatically add a large number of developers as part of a migration.
+
+Developers build apps that access your APIs. Apps are provisioned with keys and secrets, which in turn provide access to the API Products configured for your organization.
+
+
+</td></tr>
+
+</tr>
+</tbody>
+</table>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		List Developers
+	       <a href="../../api_methods/9/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/9/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/9" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/developers</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Lists all developers by email address (the unique key for developers in Apigee)</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Create a Developer
+	       <a href="../../api_methods/32/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/32/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/32" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/developers</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">POST</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Create a developer in an Organization</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Get a Developer 
+	       <a href="../../api_methods/34/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/34/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/34" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/developers/developerEmail}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Returns the profile for the Developer by email address.</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Get Count of Apps by Developer
+	       <a href="../../api_methods/35/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/35/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/35" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>developers/{developerName}?query=count&amp;entity=apps</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Get a count of Apps by Developer</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Getting Developer for an App
+	       <a href="../../api_methods/36/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/36/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/36" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/developers?app={appName}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Get the Developer associated with an App</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Getting developers by registration date
+	       <a href="../../api_methods/37/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/37/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/37" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/developers/{developername}?registereddate={registeredDate}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td></td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Update a Developer
+	       <a href="../../api_methods/38/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/38/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/38" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/developers/{developerName}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td></td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Delete a Developer
+	       <a href="../../api_methods/39/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/39/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/39" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/developers/{developerName}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">DELETE</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Deletes a Developer from an Organization</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Set a Developer's Status
+	       <a href="../../api_methods/40/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/40/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/40" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>developers/{developerName}?action={newStatus}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">POST</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Sets the status of a developer</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Get Developer of an App
+	       <a href="../../api_methods/138/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/138/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/138" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/developers?app={appName}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Gets the Developer profile by App name</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+</tbody>
+</table>
+
+
+Schema:
+
+<div id="well"><pre></pre></div>
+
+<div class="form-actions">
+  <a href="../index.html" class="btn"><span class="translation_missing" title="translation missing: en.helpers.links.back">Back</span></a>
+  <a href="edit/index.html" class="btn"><span class="translation_missing" title="translation missing: en.helpers.links.edit">Edit</span></a>
+
+</div>
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

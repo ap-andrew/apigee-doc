@@ -1,0 +1,199 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>List Oauth 1.0 Verifiers :: /oauth/1/verifiers</h1> 
+</p>
+
+<!-- <a href="/api_methods/150/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Oauth 1.0a Verifiers
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+GET
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  Gets a list of all verifiers and details for each verifier in an Organization.
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  List Oauth 1.0 Verifiers
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/oauth/1/verifiers
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;verifier&quot; : [ {
+    &quot;appUserId&quot; : &quot;Developer@apigee.com&quot;,
+    &quot;attributes&quot; : [ {
+      &quot;name&quot; : &quot;region&quot;,
+      &quot;value&quot; : &quot;north&quot;
+    } ],
+    &quot;code&quot; : &quot;1234&quot;,
+    &quot;createdAt&quot; : 1343035714593,
+    &quot;createdBy&quot; : &quot;Admin&quot;,
+    &quot;expiresAt&quot; : 1343037514593,
+    &quot;issuedAt&quot; : 1343035714593,
+    &quot;lastModifiedAt&quot; : 1343035714593,
+    &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
+    &quot;requestToken&quot; : &quot;2c8zOXaSwbNrEJ62HhkLAjXgPvu1&quot;
+  },
+  {...}
+ ]
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_262">
+<td>code: </td>
+<td>Fetches the detail of the verifier code provided by the resource owner </td>
+<td><a href="../../response_elements/262/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/150?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_263">
+<td>appUserId: </td>
+<td>Resource owner's user ID</td>
+<td><a href="../../response_elements/263/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/150?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_264">
+<td>attributes: </td>
+<td>Arbitrary name/value elements attached to the profile for the verifier</td>
+<td><a href="../../response_elements/264/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/150?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_265">
+<td>requestToken: </td>
+<td>Token to re-issue the request token</td>
+<td><a href="../../response_elements/265/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/150?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_266">
+<td>createdAt: </td>
+<td>UNIX time the verifier was created</td>
+<td><a href="../../response_elements/266/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/150?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_267">
+<td>createdBy: </td>
+<td>Apigee user account name of the individual who submitted the POST request that created the verifier</td>
+<td><a href="../../response_elements/267/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/150?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_268">
+<td>expiresAt: </td>
+<td>Expiry time period of the token to be generated; token expires/is deleted when the expiry time ends</td>
+<td><a href="../../response_elements/268/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/150?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_269">
+<td>issuedAt: </td>
+<td>UNIX time the verifier code is issued</td>
+<td><a href="../../response_elements/269/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/150?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_270">
+<td>lastModifiedBy: </td>
+<td>Apigee user account name of the individual who submitted the request that most recently modified this entity	</td>
+<td><a href="../../response_elements/270/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/150?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_271">
+<td>lastModifiedAt: </td>
+<td>UNIX time the app was last modified</td>
+<td><a href="../../response_elements/271/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/150?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  Failure 500 with proper error message
+{
+  &quot;code&quot; : &quot;keymanagement.service.......&quot;,
+  &quot;message&quot; : &quot;Unable to fetch verifier code details&quot;,
+  &quot;contexts&quot; : [ ]
+}
+
+Error Codes:
+1.keymanagement.service.oauth10_verifier_list_fetch_failed
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+- application/json
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

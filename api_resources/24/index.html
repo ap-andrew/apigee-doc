@@ -1,0 +1,282 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            
+<div class="page-header">
+  <h1>Analytics</h1>
+</div>
+
+<table>
+	<tbody>
+		<tr>
+  <td class="lead">/environments/{environmentName}/stats</td>
+
+ <tr>
+	
+  <td>Provides metrics gathered on APIs and related entities in Apigee</td></tr>
+  <td>Apigee collects statistic on API traffic as it flow from apps to APIs. Statistics collected include API call information (like URL, IP, and User id) latency, errors, and so on. You can add other information by defining policies that identify message elements of interest for collection. For example, statistics can be collected from message headers, query parameters, portions of the request and response extracted from XML or JSON, and so on.  The statistics collected are used to generate out-of-the-box reports. You can also generate reports tailored to your needs by tracking key value pairs specific to your traffic.  Apigee Analytics helps you to view long-term usage trends. You can segment your audience by top developers and apps. You can understand the usage by using the API method to know where to invest, and create custom reports on business-level information. All data is pushed to Analytics where it is persisted by the Analytics server in the background. Data aggregation jobs compile various built-in or custom reports:
+
+Usage by API (built-in)
+Usage by app (built-in)
+Usage developer (built-in)
+Usage by API Traffic (built-in)
+Usage by API Product (built-in)
+Usage by Environment (built-in)
+Usage by Customizing the API</td></tr>
+
+</tr>
+</tbody>
+</table>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Get API Statistics
+	       <a href="../../api_methods/71/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/71/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/71" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/environments/{environmentName}/stats/apis</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Use the GET method to retrieve metrics for all the APIs for an organization and environment.</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Get Statistics for Top APIs
+	       <a href="../../api_methods/72/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/72/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/72" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/environments/{environmentName}/stats/apis</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Returns 5 APIs with the highest number of active end users (app end users with throughput) in the last 24 hours. </td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Get Statistics for an API Resource
+	       <a href="../../api_methods/73/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/73/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/73" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/environments/{environmentName}/stats/apis/{apiName}/resources</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td></td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Get Statistics for top Apps
+	       <a href="../../api_methods/74/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/74/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/74" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/environments/{environmentName}/stats/apps</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Use the GET method to retrieve the metrics for the first five apps for a given customer in a specific organization and environment.  </td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Get Statistics for top Developers
+	       <a href="../../api_methods/75/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/75/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/75" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/environments/{environmentName}/stats/devs</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Use the GET method to retrieve the metrics for developers in a specific organization and environment</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Get Statistics on all API traffic
+	       <a href="../../api_methods/76/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/76/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/76" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/environments/{environment_name}/stats/?select={metrics}&amp;timeRange={startDate~endDate}&amp;timeUnit={unit}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Retrieve the metrics for all the available APIs for a given customer in a specific organization and environment.</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Get Statistics for an Environment
+	       <a href="../../api_methods/77/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/77/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/77" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/environments/{environmentName}/stats/?select={metrics}&amp;timeRange={startDate~endDate}&amp;timeUnit={unit}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Gets statistics for a specified time range for the environment specified. Available staistics are message count, error count, and API count.</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Get Custom Report
+	       <a href="../../api_methods/78/index.html" class="btn btn-mini">Detail</a>
+		    <a href="../../api_methods/78/edit/index.html" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/78" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/environments/{environmentName}/stats/{customVariable}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Enables the generation of a custom report that incorporates dimensions, measures, and filters.</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+</tbody>
+</table>
+
+
+Schema:
+
+<div id="well"><pre></pre></div>
+
+<div class="form-actions">
+  <a href="../index.html" class="btn"><span class="translation_missing" title="translation missing: en.helpers.links.back">Back</span></a>
+  <a href="edit/index.html" class="btn"><span class="translation_missing" title="translation missing: en.helpers.links.edit">Edit</span></a>
+
+</div>
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

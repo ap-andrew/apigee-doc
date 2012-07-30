@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee Enterprise API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="9fYR0e9xO+mdsyVNFR5QKsBHzXQgoMRB432o6aBmh2s=" name="csrf-token" />
+    <link href="../../assets/application-a2cf2fc60e7f628224d6179e9acb6bde.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="../../assets/application-3d91ebb39ac1bf40fce53b1fddef09ec.js" type="text/javascript"></script>
+	
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link href="../../favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link href="../images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="../images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="../images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+
+  </head>
+
+
+  <body>
+
+
+    <!-- <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+		<a class="brand" href="#">Apigee Enterprise API</a>
+
+        <div class="container">
+            <ul class="nav">
+	          <li><a href="/quick_starts">Quick Starts</a></li>
+              <li><a href="/api_resources">API Resources</a></li>
+              <li><a href="/api_methods">API Methods</a></li>
+              <li><a href="/parameters">Parameters</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <h1>New request_element</h1>
+
+<form accept-charset="UTF-8" action="/request_elements" class="formtastic request_element" id="new_request_element" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="9fYR0e9xO+mdsyVNFR5QKsBHzXQgoMRB432o6aBmh2s=" /></div>
+  <fieldset class="inputs"><ol>
+    <li class="select input optional" id="request_element_api_method_input"><label class=" label" for="request_element_api_method_id">Api method</label><select id="request_element_api_method_id" name="request_element[api_method_id]"><option value=""></option>
+<option value="1">List APIs</option>
+<option value="2">Update an API</option>
+<option value="3">Delete an API</option>
+<option value="4">List API Products</option>
+<option value="5">List Apps by Developer</option>
+<option value="6">List Companies</option>
+<option value="7">Get Debug Sessions</option>
+<option value="8">List Revision Deployments</option>
+<option value="9">List Developers</option>
+<option value="10">Get count of keys/apps/developers/companies for API Product</option>
+<option value="11">Get list of keys/apps/developers/companies for API Product</option>
+<option value="12">Update API Product</option>
+<option value="13">Delete an API Poduct</option>
+<option value="14">Create a Developer App</option>
+<option value="15">Create an API</option>
+<option value="16">Create an API Product</option>
+<option value="18">Get API Deployments</option>
+<option value="19">Get API Revision Deployments</option>
+<option value="20">Get Deployments for an Environment</option>
+<option value="21">List Environments</option>
+<option value="22">List Virtual Hosts for an Environment</option>
+<option value="23">Get a Virtual Host for an Environment</option>
+<option value="24">Import an API</option>
+<option value="25">Deploy an API to an Environment</option>
+<option value="26">Undeploy an API from an Environment</option>
+<option value="27">Delete an API Revision</option>
+<option value="28">Get Deployment Status</option>
+<option value="29">Get Deployment Status for a Revision</option>
+<option value="30">Update a Developer App</option>
+<option value="31">Delete a Developer App</option>
+<option value="32">Create a Developer</option>
+<option value="34">Get a Developer </option>
+<option value="35">Get Count of Apps by Developer</option>
+<option value="36">Getting Developer for an App</option>
+<option value="37">Getting developers by registration date</option>
+<option value="38">Update a Developer</option>
+<option value="39">Delete a Developer</option>
+<option value="40">Set a Developer's Status</option>
+<option value="41">Create Debug Session</option>
+<option value="42">Get Debug Session Data</option>
+<option value="43">Delete a Debug Session</option>
+<option value="44">Create Map</option>
+<option value="45">Get Map</option>
+<option value="46">List Maps</option>
+<option value="48">Delete Entry</option>
+<option value="49">Update existing App Key with New ApiProduct(s).</option>
+<option value="50">Get a specific Key of Company App</option>
+<option value="51">Delete a Company App Key</option>
+<option value="52">Revoke a Company App Key</option>
+<option value="53">Approve a Company App Key</option>
+<option value="54">Create Company App Famiy</option>
+<option value="55">Get a Company App Famiy</option>
+<option value="56">Update Company App Famiy</option>
+<option value="57">Delete App from Company App Family</option>
+<option value="58">Delete a Company App Family</option>
+<option value="59">List Company App Families</option>
+<option value="60">List Deployments</option>
+<option value="61">Get Organization</option>
+<option value="62">Update Map</option>
+<option value="63">Delete Map</option>
+<option value="64">Create Company App</option>
+<option value="65">Update a Company App</option>
+<option value="66">Get count of APi Resources for Company App</option>
+<option value="67">Delete a Company App</option>
+<option value="68">List Company Apps</option>
+<option value="69">List Company Apps (Expanded)</option>
+<option value="70">Export an API Revision</option>
+<option value="71">Get API Statistics</option>
+<option value="72">Get Statistics for Top APIs</option>
+<option value="73">Get Statistics for an API Resource</option>
+<option value="74">Get Statistics for top Apps</option>
+<option value="75">Get Statistics for top Developers</option>
+<option value="76">Get Statistics on all API traffic</option>
+<option value="77">Get Statistics for an Environment</option>
+<option value="78">Get Custom Report</option>
+<option value="79">Create a User</option>
+<option value="80">Authenticate a user</option>
+<option value="81">List Users</option>
+<option value="82">Get a User</option>
+<option value="83">Update a User</option>
+<option value="84">Delete a User</option>
+<option value="86">Get an API Product</option>
+<option value="87">Get a Developer App</option>
+<option value="88">Approve a Developer App</option>
+<option value="89">Update Key with ApiProduct(s)</option>
+<option value="90">Get a specific Key of Developer App</option>
+<option value="91">Delete a Developer App Key</option>
+<option value="92">Revoke a Developer App Key</option>
+<option value="93">Approve a Developer App Key</option>
+<option value="94">Revoke APIProduct of a specific Key of Developer App</option>
+<option value="95">Approve APIProduct for the Key of Developer App</option>
+<option value="96">List Developer Apps (Expanded)</option>
+<option value="97">Revoke a Developer App</option>
+<option value="98">Create App for a Company</option>
+<option value="99">Update Company App</option>
+<option value="104">Get an API</option>
+<option value="105">Export an API</option>
+<option value="106">Get Authorization Code</option>
+<option value="107">List Authorization Codes</option>
+<option value="108">Delete Authorization Code</option>
+<option value="109">Get an Access Token</option>
+<option value="110">Get count of AccessTokens</option>
+<option value="111">Update Access Token</option>
+<option value="112">Get Deployments for an Organization</option>
+<option value="113">Get Environment</option>
+<option value="114">Delete an Access Token</option>
+<option value="115">Approve an Access Token</option>
+<option value="116">Revoke an Access Token</option>
+<option value="117">Create a Company</option>
+<option value="118">Update a Company</option>
+<option value="119">Get Details for a Company</option>
+<option value="120">Delete a Company</option>
+<option value="121">List Companies (Expanded)</option>
+<option value="122">Add a Company Developer</option>
+<option value="123">Remove a Developer from a Company</option>
+<option value="124">List Developers in a Company</option>
+<option value="125">Create an App Family</option>
+<option value="126">Get App Family</option>
+<option value="127">Update an App Family</option>
+<option value="128">Remove App from App Family</option>
+<option value="129">Delete App Family</option>
+<option value="130">List App Families</option>
+<option value="131">List App Families (Expanded)</option>
+<option value="132">Update a Company App with a New API Product</option>
+<option value="133">Gets the count of apiresources for a developer app in an organization</option>
+<option value="134">Get Apps by Status</option>
+<option value="135">Get Apps by Type</option>
+<option value="136">Get Apps by App Family</option>
+<option value="137">List Apps by Creation Date</option>
+<option value="138">Get Developer of an App</option>
+<option value="139">Get count of Oauth 1.0 Access Tokens for  Developer App</option>
+<option value="140">Get count of Oauth 2.0 Access Tokens for  Developer App</option>
+<option value="141">Get count of Oauth 1.0 Access Tokens for  Developer App Key</option>
+<option value="142">Get count of Oauth 2.0 Access Tokens for  Developer App Key</option>
+<option value="143">Get an Oauth 1.0a Request Token</option>
+<option value="144">List Request Tokens</option>
+<option value="145">Update a Request Token</option>
+<option value="146">Delete a Request Token</option>
+<option value="147">Approve a Request Token</option>
+<option value="148">Revoke a Request Token</option>
+<option value="149">Get an Oauth 1.0 Verifier</option>
+<option value="150">List Oauth 1.0 Verifiers</option>
+<option value="151">Delete Oauth 1.0 Verifier</option>
+<option value="152">Get Oauth 1.0 Access Token</option>
+<option value="153">Get count of Oauth 1.0 Access Tokens</option>
+<option value="154">Update Oauth 1.0 Access Token</option>
+<option value="155">Delete Oauth 1.0 Access Token</option>
+<option value="156">Approve Oauth 1.0  Access Token</option>
+<option value="157">Revoke Oauth 1.0 Access Token</option></select>
+
+</li>
+    <li class="string input optional stringish" id="request_element_name_input"><label class=" label" for="request_element_name">Name</label><input id="request_element_name" maxlength="255" name="request_element[name]" type="text" />
+
+</li>
+    <li class="text input optional" id="request_element_description_input"><label class=" label" for="request_element_description">Description</label><textarea id="request_element_description" name="request_element[description]" rows="20"></textarea>
+
+</li>
+    <li class="string input optional stringish" id="request_element_required_input"><label class=" label" for="request_element_required">Required</label><input id="request_element_required" maxlength="255" name="request_element[required]" type="text" />
+
+</li>
+
+</ol></fieldset>
+  <fieldset class="actions"><ol>
+    <li class="action input_action " id="request_element_submit_action"><input name="commit" type="submit" value="Create Request element" /></li>
+</ol></fieldset></form>
+
+<a href="../index.html">Back</a>
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+      <!-- <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer> -->
+
+    </div> <!-- /container -->
+
+    <!-- Javascripts
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="/assets/application-3d91ebb39ac1bf40fce53b1fddef09ec.js" type="text/javascript"></script> -->
+
+  </body>
+</html>
+
+<!-- Localized -->

@@ -1,0 +1,241 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Update a Company App :: /companies/{companyName}/apps/{appName}</h1> 
+</p>
+
+<!-- <a href="/api_methods/65/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Company Apps
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+PUT
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Update an existing Company App
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u myname:mypass https://api.enterprise.apigee.com/v1/organizations/{organizationname}/companies/{companyname}/apps/{appname}
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;access_type&quot; : &quot;read&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;Language&quot;,
+    &quot;value&quot; : &quot;java-j2ee&quot;
+  } ],
+  &quot;apiProducts&quot;: [ &quot;sandbox&quot;],
+  &quot;callback_url&quot; : &quot;www.apigee.com&quot;
+}
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+
+<tr>
+<div class="request_element" id="request_element_30">
+<td>access_type</td>
+<td></td>
+<td></td>
+<td>Yes</td>
+<td><a href="../../request_elements/30/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_31">
+<td>attributes</td>
+<td></td>
+<td></td>
+<td>No</td>
+<td><a href="../../request_elements/31/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_32">
+<td>apiProducts</td>
+<td></td>
+<td></td>
+<td>No</td>
+<td><a href="../../request_elements/32/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_33">
+<td>callback_url</td>
+<td></td>
+<td></td>
+<td>Yes</td>
+<td><a href="../../request_elements/33/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;access_type&quot; : &quot;read&quot;,
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;Language&quot;,
+    &quot;value&quot; : &quot;java-j2ee&quot;
+  } ],
+  &quot;callback_url&quot; : &quot;www.apigee.com&quot;,
+  &quot;created_at&quot; : 1342431404360,
+  &quot;created_by&quot; : &quot;Admin&quot;,
+  &quot;lastmodified_at&quot; : 1342431590819,
+  &quot;lastmodified_by&quot; : &quot;Admin&quot;,
+  &quot;name&quot; : &quot;sandboxTestApp&quot;,
+  &quot;status&quot; : &quot;approved&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_155">
+<td>access_type: </td>
+<td></td>
+<td><a href="../../response_elements/155/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/65?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_156">
+<td>attributes: </td>
+<td></td>
+<td><a href="../../response_elements/156/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/65?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_157">
+<td>callback_url: </td>
+<td></td>
+<td><a href="../../response_elements/157/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/65?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_158">
+<td>created_at: </td>
+<td></td>
+<td><a href="../../response_elements/158/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/65?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_159">
+<td>created_at: </td>
+<td></td>
+<td><a href="../../response_elements/159/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/65?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_160">
+<td>created_by: </td>
+<td></td>
+<td><a href="../../response_elements/160/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/65?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_161">
+<td>lastmodified_at: </td>
+<td></td>
+<td><a href="../../response_elements/161/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/65?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_162">
+<td>lastmodified_by: </td>
+<td></td>
+<td><a href="../../response_elements/162/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/65?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_163">
+<td>status: </td>
+<td></td>
+<td><a href="../../response_elements/163/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/65?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;code&quot; : &quot;developer.service.AppDoesNotExist&quot;,
+  &quot;message&quot; : &quot;App named sandboxTestApp1 does not exist in organization AutomationOrganization&quot;,
+  &quot;contexts&quot; : [ ]
+}
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+- application/json
+- text/xml
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->

@@ -1,0 +1,293 @@
+
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            <p>
+<h1>Create a Developer App :: /developers/{developerName}/apps</h1> 
+</p>
+
+<!-- <a href="/api_methods/14/edit" class="btn btn-mini">Edit</a> -->
+
+<p>
+ <b>API resource:</b>
+  Developer Apps
+</p>
+
+<p>
+  <b>Verb:</b>
+<span class="label label-success">
+POST
+</span>
+</p>
+
+<p>
+  <b>Doc:</b>
+  Optional elements:
+AccessType, CallbackUrl, ApiProducts, Attributes
+ 
+Note:
+CallbackUrl can be ‘,’ separated multiple callback URLs’.
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  Creates an App associated with a Developer
+</p>
+
+<b> cURL:</b>
+
+<div class="well">
+	<pre>
+curl -u {myname:mypass} &quot;https://api.enterprise.apigee.com/v1/o/{myorg}/developers/{developerName}/apps/&quot; 
+</pre>
+</div>
+
+<b>Request Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;accessType&quot; : &quot;read&quot;,
+  &quot;attributes&quot; : [ {
+	&quot;name&quot; : &quot;Language&quot;,
+	&quot;value&quot; : &quot;java&quot;
+  } ],
+  &quot;apiProducts&quot;: [ &quot;TestApiProduct&quot;],
+  &quot;callbackUrl&quot; : &quot;www.apigee.com&quot;,
+  &quot;name&quot; : &quot;MyTestApp&quot;
+}
+	</pre>
+</div>
+
+
+<b>Request Payload Elements:</b> 
+<div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Default</th>
+			<th>Required?</th>
+		</tr>
+		</thead>
+
+
+<tr>
+<div class="request_element" id="request_element_36">
+<td>accessType</td>
+<td>Legacy Apigee-specific element, unused in current version of Apigee</td>
+<td></td>
+<td>No</td>
+<td><a href="../../request_elements/36/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_37">
+<td>attributes</td>
+<td>Arbitrary name/value attributes that may be used for customizing profile information or for app specific processing.</td>
+<td></td>
+<td>No</td>
+<td><a href="../../request_elements/37/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_38">
+<td>callbackUrl</td>
+<td>A URL that can be used by the API to programatically update consumer Apps, Unused by Apigee. Can be multiple comma separated values. </td>
+<td></td>
+<td>No</td>
+<td><a href="../../request_elements/38/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+
+<tr>
+<div class="request_element" id="request_element_39">
+<td>name</td>
+<td></td>
+<td></td>
+<td>Yes</td>
+<td><a href="../../request_elements/39/index.html" class="btn btn-mini">Detail</a></td>
+</div></tr>
+
+
+
+</table>
+</div>
+
+<b>Response Payload:</b> 
+<div class="well">
+	<pre>
+  {
+  &quot;accessType&quot; : &quot;read&quot;,
+  &quot;attributes&quot; : [ {
+	&quot;name&quot; : &quot;Language&quot;,
+	&quot;value&quot; : &quot;java&quot;
+  } ],
+  &quot;callbackUrl&quot; : &quot;www.apigee.com&quot;,
+  &quot;createdAt&quot; : 1343052353553,
+  &quot;createdBy&quot; : &quot;Admin&quot;,
+  &quot;credentials&quot; : [ {
+	&quot;apiProducts&quot; : [ {
+  	&quot;apiproduct&quot; : &quot;TestApiProduct&quot;,
+  	&quot;status&quot; : &quot;pending&quot;
+	} ],
+	&quot;attributes&quot; : [ ],
+	&quot;consumerKey&quot; : &quot;VBsAd4wO0wkevxGaqlKlVF8qlGa4ydsT&quot;,
+	&quot;consumerSecret&quot; : &quot;gi8yb1ZFZ7ztRhYa&quot;,
+	&quot;status&quot; : &quot;approved&quot;
+  } ],
+  &quot;lastModifiedAt&quot; : 1343052353553,
+  &quot;lastModifiedBy&quot; : &quot;Admin&quot;,
+  &quot;name&quot; : &quot;MyTestApp&quot;,
+  &quot;status&quot; : &quot;approved&quot;
+}
+	</pre>
+</div>
+
+<b>Response Payload Elements:</b>
+<div><table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+<th></th>
+<th></th>
+		</tr>
+		</thead>
+<tr>
+<div class="response_element" id="response_element_164">
+<td>accessType: </td>
+<td></td>
+<td><a href="../../response_elements/164/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/14?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_165">
+<td>attributes: </td>
+<td></td>
+<td><a href="../../response_elements/165/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/14?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_166">
+<td>callbackUrl: </td>
+<td></td>
+<td><a href="../../response_elements/166/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/14?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_167">
+<td>createdAt: </td>
+<td></td>
+<td><a href="../../response_elements/167/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/14?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_168">
+<td>createdBy: </td>
+<td></td>
+<td><a href="../../response_elements/168/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/14?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_169">
+<td>credentials: </td>
+<td></td>
+<td><a href="../../response_elements/169/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/14?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_170">
+<td>apiProducts: </td>
+<td></td>
+<td><a href="../../response_elements/170/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/14?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_171">
+<td>status: </td>
+<td></td>
+<td><a href="../../response_elements/171/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/14?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_172">
+<td>attributes: </td>
+<td></td>
+<td><a href="../../response_elements/172/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/14?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_173">
+<td>consumerKey: </td>
+<td></td>
+<td><a href="../../response_elements/173/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/14?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_174">
+<td>consumerSecret: </td>
+<td></td>
+<td><a href="../../response_elements/174/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/14?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_175">
+<td>status: </td>
+<td></td>
+<td><a href="../../response_elements/175/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/14?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_176">
+<td>lastModifiedAt: </td>
+<td></td>
+<td><a href="../../response_elements/176/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/14?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_177">
+<td>lastModifiedBy: </td>
+<td></td>
+<td><a href="../../response_elements/177/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/14?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_178">
+<td>name: </td>
+<td></td>
+<td><a href="../../response_elements/178/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/14?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr><tr>
+<div class="response_element" id="response_element_179">
+<td>status: </td>
+<td></td>
+<td><a href="../../response_elements/179/index.html" class="btn btn-mini">Detail</a></td>
+<!-- <td><a href="/api_methods/14?class=btn+btn-mini&amp;confirm=Are+you+sure%3F&amp;method=delete">Delete</a></td> -->
+</div></tr>
+</table></div>
+
+<b>Errors</b> 
+<div class="well">
+	<pre>
+  
+	</pre>
+</div>
+
+<b>Auth:</b>
+Basic Auth
+</p>
+
+
+<p>
+<b>Content Types:</b>
+--- 
+- &quot;&quot;
+- application/json
+
+</p>
+
+
+
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
